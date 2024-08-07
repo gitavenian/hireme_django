@@ -1,0 +1,1001 @@
+main_required_skill,soft_required_skill,user_skill1,user_skill2,years_experience,user_points
+Teacher,Professor,Teacher,Solutions Architect,5,17
+Project Manager,Manager,Project Manager,Medical Doctor,4,12
+Front End Developer,Back End Developer,Front End Developer,Fitness Coach,1,3
+Florist,Cybersecurity Analyst,Florist,Makeup Artist,5,17
+Full Stack Developer,Electrical Engineer,Full Stack Developer,Back End Developer,1,3
+Technical Writer,Florist,Technical Writer,Pilot,4,12
+Machinist,Technical Writer,Machinist,Physiotherapist,3,8
+Judge,Lawyer,Judge,Professor,3,8
+Jeweler,Hairdresser / Barber,Jeweler,Mechanical Engineer,5,17
+Makeup Artist,Artist,Makeup Artist,Civil Engineer,2,5
+Electrical Engineer,Environmental Engineer,Electrical Engineer,Translator,5,17
+Front End Developer,Game Developer,Front End Developer,Technical Writer,5,17
+Hotel / Restaurant Manager,Tour Guide,Hotel / Restaurant Manager,Back End Developer,1,3
+Human Resources Manager,Project Manager,Human Resources Manager,Mechanical Engineer,3,8
+Pharmacist,Nurse,Pharmacist,Back End Developer,3,8
+Full Stack Developer,IT Engineer,Full Stack Developer,Lawyer,4,12
+Sports Therapist,Yoga Instructor,Sports Therapist,Business Analyst,2,5
+Lawyer,Judge,Lawyer,Chemical Engineer,4,12
+Cybersecurity Analyst,Florist,Cybersecurity Analyst,Electrical Engineer,5,17
+Physiotherapist,Medical Doctor,Physiotherapist,Manager,5,17
+Chef,Event Planner,Chef,Front End Developer,2,5
+Sports Therapist,Fitness Coach,Sports Therapist,Personal Trainer,1,3
+Chef,Barista / Waitor,Chef,Marketing Manager,4,12
+Lawyer,Judge,Lawyer,Graphic Designer,2,5
+Professor,Teacher,Professor,Barista / Waitor,3,8
+Judge,Lawyer,Judge,Front End Developer,1,3
+Manager,Marketing Manager,Manager,Business Analyst,2,5
+Hotel / Restaurant Manager,Tour Guide,Hotel / Restaurant Manager,Chef,5,17
+Human Resources Manager,Project Manager,Human Resources Manager,Chemical Engineer,2,5
+Judge,Lawyer,Judge,Chef,1,3
+Professor,Teacher,Professor,Electrician,1,3
+Yoga Instructor,Personal Trainer,Yoga Instructor,Full Stack Developer,5,17
+Judge,Lawyer,Judge,Lawyer,3,9
+Judge,Lawyer,Judge,Makeup Artist,5,17
+Lab Technician,Dentist,Lab Technician,Electrical Engineer,5,17
+Translator,Florist,Translator,Graphic Designer,3,8
+Makeup Artist,Hairdresser / Barber,Makeup Artist,Back End Developer,3,8
+Lab Technician,Veterinarian,Lab Technician,Translator,4,12
+Fitness Coach,Personal Trainer,Fitness Coach,Translator,2,5
+Cybersecurity Analyst,Electrician,Cybersecurity Analyst,Event Planner,1,3
+Marketing Manager,Manager,Marketing Manager,Hotel / Restaurant Manager,3,8
+Business Analyst,Marketing Manager,Business Analyst,Hotel / Restaurant Manager,2,5
+Technical Writer,Florist,Technical Writer,Translator,2,5
+Lab Technician,Veterinarian,Lab Technician,Physiotherapist,5,17
+Lab Technician,Dentist,Lab Technician,Nurse,3,8
+Chef,Event Planner,Chef,Medical Doctor,2,5
+Lawyer,Judge,Lawyer,Flutter Developer,4,12
+Machinist,Pilot,Machinist,Medical Doctor,2,5
+Electrician,Translator,Electrician,Barista / Waitor,4,12
+Manager,Marketing Manager,Manager,Lab Technician,1,3
+Artist,Hairdresser / Barber,Artist,Project Manager,3,8
+Lawyer,Judge,Lawyer,Professor,4,12
+Florist,Cybersecurity Analyst,Florist,Civil Engineer,3,8
+Professor,Teacher,Professor,Lawyer,5,17
+Lawyer,Judge,Lawyer,Teacher,5,17
+Human Resources Manager,Project Manager,Human Resources Manager,Business Analyst,2,5
+UX/UI Designer,IT Engineer,UX/UI Designer,Translator,2,5
+Physiotherapist,Dentist,Physiotherapist,Cybersecurity Analyst,4,12
+Lawyer,Judge,Lawyer,Hotel / Restaurant Manager,1,3
+Sports Therapist,Personal Trainer,Sports Therapist,Nurse,2,5
+Yoga Instructor,Personal Trainer,Yoga Instructor,Artist,3,8
+Judge,Lawyer,Judge,Graphic Designer,1,3
+Business Analyst,Human Resources Manager,Business Analyst,Judge,4,12
+Fitness Coach,Yoga Instructor,Fitness Coach,Marketing Manager,4,12
+Pharmacist,Veterinarian,Pharmacist,Lab Technician,4,12
+Pharmacist,Medical Doctor,Pharmacist,Physiotherapist,4,12
+Fitness Coach,Sports Therapist,Fitness Coach,Professor,5,17
+Technical Writer,Machinist,Technical Writer,Flutter Developer,3,8
+Pilot,Electrician,Pilot,Machinist,4,12
+Lab Technician,Medical Doctor,Lab Technician,Fitness Coach,4,12
+Human Resources Manager,Project Manager,Human Resources Manager,Business Analyst,4,12
+Human Resources Manager,Business Analyst,Human Resources Manager,Sports Therapist,5,17
+Teacher,Professor,Teacher,Medical Doctor,4,12
+Lawyer,Judge,Lawyer,Barista / Waitor,1,3
+Judge,Lawyer,Judge,Personal Trainer,3,8
+Business Analyst,Project Manager,Business Analyst,Teacher,2,5
+Artist,Makeup Artist,Artist,Florist,4,12
+Barista / Waitor,Chef,Barista / Waitor,Marketing Manager,3,8
+Solutions Architect,Flutter Developer,Solutions Architect,Electrical Engineer,2,5
+Hairdresser / Barber,Makeup Artist,Hairdresser / Barber,Chef,4,12
+Electrical Engineer,UX/UI Designer,Electrical Engineer,Cybersecurity Analyst,4,12
+Pharmacist,Nurse,Pharmacist,Flutter Developer,5,17
+Pharmacist,Lab Technician,Pharmacist,Physiotherapist,3,8
+Translator,Pilot,Translator,Personal Trainer,2,5
+Chef,Barista / Waitor,Chef,Artist,3,8
+Marketing Manager,Human Resources Manager,Marketing Manager,IT Engineer,2,5
+Translator,Cybersecurity Analyst,Translator,Lab Technician,5,17
+Judge,Lawyer,Judge,Human Resources Manager,2,5
+Yoga Instructor,Sports Therapist,Yoga Instructor,Human Resources Manager,2,5
+Teacher,Professor,Teacher,Veterinarian,1,3
+Cybersecurity Analyst,Pilot,Cybersecurity Analyst,Translator,5,17
+Tour Guide,Barista / Waitor,Tour Guide,Nurse,3,8
+Graphic Designer,Electrical Engineer,Graphic Designer,IT Engineer,1,3
+Personal Trainer,Yoga Instructor,Personal Trainer,Electrician,5,17
+Hairdresser / Barber,Artist,Hairdresser / Barber,Lab Technician,2,5
+Flutter Developer,Electrical Engineer,Flutter Developer,Event Planner,5,17
+Judge,Lawyer,Judge,Physiotherapist,2,5
+Front End Developer,IT Engineer,Front End Developer,Project Manager,5,17
+Lawyer,Judge,Lawyer,Graphic Designer,5,17
+Marketing Manager,Business Analyst,Marketing Manager,Machinist,3,8
+Physiotherapist,Medical Doctor,Physiotherapist,Back End Developer,3,8
+Cybersecurity Analyst,Florist,Cybersecurity Analyst,Hotel / Restaurant Manager,3,8
+Hairdresser / Barber,Artist,Hairdresser / Barber,Machinist,3,8
+Electrician,Cybersecurity Analyst,Electrician,Artist,3,8
+Judge,Lawyer,Judge,Lab Technician,1,3
+Makeup Artist,Hairdresser / Barber,Makeup Artist,Marketing Manager,4,12
+Nurse,Medical Doctor,Nurse,Mechanical Engineer,2,5
+Personal Trainer,Sports Therapist,Personal Trainer,Veterinarian,3,8
+Graphic Designer,Full Stack Developer,Graphic Designer,Marketing Manager,3,8
+Teacher,Professor,Teacher,Yoga Instructor,1,3
+Yoga Instructor,Fitness Coach,Yoga Instructor,Translator,1,3
+Jeweler,Hairdresser / Barber,Jeweler,Teacher,1,3
+UX/UI Designer,Electrical Engineer,UX/UI Designer,Jeweler,3,8
+Fitness Coach,Sports Therapist,Fitness Coach,Florist,5,17
+Marketing Manager,Manager,Marketing Manager,Hotel / Restaurant Manager,5,17
+Teacher,Professor,Teacher,Front End Developer,1,3
+Fitness Coach,Yoga Instructor,Fitness Coach,Artist,2,5
+Translator,Machinist,Translator,Project Manager,5,17
+Physiotherapist,Lab Technician,Physiotherapist,Makeup Artist,4,12
+Sports Therapist,Yoga Instructor,Sports Therapist,Chef,5,17
+Veterinarian,Dentist,Veterinarian,Solutions Architect,3,8
+Human Resources Manager,Business Analyst,Human Resources Manager,Machinist,2,5
+Electrical Engineer,Full Stack Developer,Electrical Engineer,Solutions Architect,5,17
+Judge,Lawyer,Judge,Lawyer,1,4
+Marketing Manager,Business Analyst,Marketing Manager,Biomedical Engineer,3,8
+Translator,Pilot,Translator,Artist,1,3
+Jeweler,Hairdresser / Barber,Jeweler,Machinist,3,8
+Personal Trainer,Yoga Instructor,Personal Trainer,Nurse,3,8
+Lab Technician,Veterinarian,Lab Technician,Chef,4,12
+Fitness Coach,Sports Therapist,Fitness Coach,Manager,1,3
+Solutions Architect,IT Engineer,Solutions Architect,Electrician,1,3
+Judge,Lawyer,Judge,Electrical Engineer,2,5
+Event Planner,Tour Guide,Event Planner,Tour Guide,1,4
+Translator,Machinist,Translator,AI Development,5,17
+Marketing Manager,Manager,Marketing Manager,Chemical Engineer,5,17
+Judge,Lawyer,Judge,Event Planner,4,12
+Sports Therapist,Fitness Coach,Sports Therapist,Environmental Engineer,3,8
+Mechanical Engineer,IT Engineer,Mechanical Engineer,Graphic Designer,3,8
+Sports Therapist,Yoga Instructor,Sports Therapist,Civil Engineer,1,3
+Judge,Lawyer,Judge,Jeweler,3,8
+Marketing Manager,Manager,Marketing Manager,Full Stack Developer,4,12
+Project Manager,Manager,Project Manager,Hotel / Restaurant Manager,2,5
+UX/UI Designer,Environmental Engineer,UX/UI Designer,Judge,3,8
+Teacher,Professor,Teacher,Graphic Designer,3,8
+Fitness Coach,Yoga Instructor,Fitness Coach,Electrical Engineer,4,12
+Teacher,Professor,Teacher,Mechanical Engineer,3,8
+Chemical Engineer,Electrical Engineer,Chemical Engineer,Hotel / Restaurant Manager,2,5
+Manager,Business Analyst,Manager,Physiotherapist,2,5
+Tour Guide,Chef,Tour Guide,Electrical Engineer,4,12
+Hairdresser / Barber,Makeup Artist,Hairdresser / Barber,Tour Guide,3,8
+Dentist,Medical Doctor,Dentist,AI Development,3,8
+Professor,Teacher,Professor,Medical Doctor,1,3
+Personal Trainer,Yoga Instructor,Personal Trainer,Pharmacist,3,8
+Cybersecurity Analyst,Technical Writer,Cybersecurity Analyst,Medical Doctor,1,3
+Manager,Project Manager,Manager,AI Development,1,3
+Makeup Artist,Jeweler,Makeup Artist,Marketing Manager,1,3
+Nurse,Medical Doctor,Nurse,Pilot,2,5
+Graphic Designer,Solutions Architect,Graphic Designer,Game Developer,5,17
+Sports Therapist,Personal Trainer,Sports Therapist,Flutter Developer,1,3
+Lawyer,Judge,Lawyer,Physiotherapist,2,5
+Lab Technician,Nurse,Lab Technician,IT Engineer,2,5
+Pharmacist,Medical Doctor,Pharmacist,Barista / Waitor,5,17
+Chef,Event Planner,Chef,Hairdresser / Barber,5,17
+Tour Guide,Chef,Tour Guide,Florist,3,8
+Barista / Waitor,Tour Guide,Barista / Waitor,Nurse,1,3
+Physiotherapist,Nurse,Physiotherapist,Event Planner,4,12
+Fitness Coach,Sports Therapist,Fitness Coach,Business Analyst,1,3
+Translator,Technical Writer,Translator,Hairdresser / Barber,4,12
+Lawyer,Judge,Lawyer,AI Development,3,8
+Tour Guide,Hotel / Restaurant Manager,Tour Guide,Electrician,5,17
+Judge,Lawyer,Judge,IT Engineer,4,12
+Translator,Florist,Translator,Cybersecurity Analyst,2,5
+UX/UI Designer,Solutions Architect,UX/UI Designer,Full Stack Developer,1,3
+Full Stack Developer,Chemical Engineer,Full Stack Developer,Veterinarian,4,12
+Pharmacist,Nurse,Pharmacist,Chef,5,17
+Hairdresser / Barber,Makeup Artist,Hairdresser / Barber,Front End Developer,5,17
+Chef,Tour Guide,Chef,Full Stack Developer,3,8
+Game Developer,IT Engineer,Game Developer,Personal Trainer,4,12
+Barista / Waitor,Chef,Barista / Waitor,Technical Writer,1,3
+Hotel / Restaurant Manager,Chef,Hotel / Restaurant Manager,Makeup Artist,3,8
+Tour Guide,Hotel / Restaurant Manager,Tour Guide,Hotel / Restaurant Manager,1,4
+Manager,Human Resources Manager,Manager,Full Stack Developer,2,5
+AI Development,Electrical Engineer,AI Development,Tour Guide,2,5
+Judge,Lawyer,Judge,Barista / Waitor,1,3
+Judge,Lawyer,Judge,Environmental Engineer,1,3
+Business Analyst,Project Manager,Business Analyst,Graphic Designer,2,5
+Pilot,Translator,Pilot,Electrician,5,17
+Judge,Lawyer,Judge,Cybersecurity Analyst,4,12
+AI Development,Civil Engineer,AI Development,Game Developer,2,5
+Translator,Technical Writer,Translator,Chef,2,5
+Jeweler,Hairdresser / Barber,Jeweler,Pharmacist,5,17
+Tour Guide,Event Planner,Tour Guide,Yoga Instructor,1,3
+Jeweler,Makeup Artist,Jeweler,Tour Guide,1,3
+Teacher,Professor,Teacher,Project Manager,4,12
+Human Resources Manager,Manager,Human Resources Manager,AI Development,3,8
+Fitness Coach,Yoga Instructor,Fitness Coach,Judge,5,17
+Florist,Technical Writer,Florist,Pharmacist,5,17
+Teacher,Professor,Teacher,Fitness Coach,1,3
+Jeweler,Hairdresser / Barber,Jeweler,Technical Writer,3,8
+Teacher,Professor,Teacher,Veterinarian,5,17
+Dentist,Medical Doctor,Dentist,IT Engineer,2,5
+Teacher,Professor,Teacher,Florist,2,5
+Fitness Coach,Personal Trainer,Fitness Coach,Back End Developer,1,3
+Sports Therapist,Yoga Instructor,Sports Therapist,Translator,5,17
+Human Resources Manager,Business Analyst,Human Resources Manager,Florist,4,12
+Yoga Instructor,Sports Therapist,Yoga Instructor,Veterinarian,2,5
+Jeweler,Hairdresser / Barber,Jeweler,Back End Developer,3,8
+Professor,Teacher,Professor,Pharmacist,5,17
+Lab Technician,Dentist,Lab Technician,Florist,2,5
+Jeweler,Makeup Artist,Jeweler,Game Developer,5,17
+Event Planner,Chef,Event Planner,Game Developer,5,17
+Sports Therapist,Yoga Instructor,Sports Therapist,Manager,2,5
+Marketing Manager,Project Manager,Marketing Manager,Fitness Coach,5,17
+Teacher,Professor,Teacher,Hairdresser / Barber,5,17
+Teacher,Professor,Teacher,Chef,1,3
+Dentist,Pharmacist,Dentist,Veterinarian,3,8
+Lawyer,Judge,Lawyer,Medical Doctor,4,12
+Lawyer,Judge,Lawyer,Electrician,4,12
+Teacher,Professor,Teacher,Nurse,2,5
+Machinist,Cybersecurity Analyst,Machinist,Lawyer,2,5
+Judge,Lawyer,Judge,Dentist,4,12
+Barista / Waitor,Event Planner,Barista / Waitor,Electrical Engineer,4,12
+Dentist,Physiotherapist,Dentist,Veterinarian,5,17
+Lawyer,Judge,Lawyer,Jeweler,4,12
+Marketing Manager,Project Manager,Marketing Manager,Judge,2,5
+Nurse,Lab Technician,Nurse,Barista / Waitor,1,3
+Sports Therapist,Personal Trainer,Sports Therapist,Chemical Engineer,2,5
+Lab Technician,Nurse,Lab Technician,Machinist,4,12
+Mechanical Engineer,Electrical Engineer,Mechanical Engineer,Machinist,3,8
+Hairdresser / Barber,Jeweler,Hairdresser / Barber,Fitness Coach,4,12
+Solutions Architect,Back End Developer,Solutions Architect,Lab Technician,4,12
+Yoga Instructor,Sports Therapist,Yoga Instructor,Teacher,2,5
+Event Planner,Chef,Event Planner,Tour Guide,3,8
+Professor,Teacher,Professor,Chemical Engineer,2,5
+Business Analyst,Project Manager,Business Analyst,Professor,3,8
+Cybersecurity Analyst,Machinist,Cybersecurity Analyst,Nurse,4,12
+Hairdresser / Barber,Artist,Hairdresser / Barber,Physiotherapist,1,3
+Yoga Instructor,Personal Trainer,Yoga Instructor,Front End Developer,5,17
+Yoga Instructor,Fitness Coach,Yoga Instructor,Biomedical Engineer,5,17
+Florist,Electrician,Florist,Business Analyst,2,5
+Dentist,Lab Technician,Dentist,Professor,5,17
+Human Resources Manager,Manager,Human Resources Manager,Medical Doctor,5,17
+Hairdresser / Barber,Artist,Hairdresser / Barber,Machinist,5,17
+Veterinarian,Pharmacist,Veterinarian,Biomedical Engineer,5,17
+Sports Therapist,Yoga Instructor,Sports Therapist,Artist,3,8
+Hairdresser / Barber,Jeweler,Hairdresser / Barber,IT Engineer,3,8
+Sports Therapist,Fitness Coach,Sports Therapist,Solutions Architect,3,8
+Chemical Engineer,Graphic Designer,Chemical Engineer,IT Engineer,4,12
+Marketing Manager,Business Analyst,Marketing Manager,Game Developer,4,12
+Flutter Developer,Solutions Architect,Flutter Developer,Civil Engineer,4,12
+Professor,Teacher,Professor,Mechanical Engineer,5,17
+Fitness Coach,Personal Trainer,Fitness Coach,Teacher,1,3
+Full Stack Developer,IT Engineer,Full Stack Developer,Fitness Coach,3,8
+Event Planner,Hotel / Restaurant Manager,Event Planner,Hotel / Restaurant Manager,1,4
+Electrician,Translator,Electrician,Makeup Artist,4,12
+Judge,Lawyer,Judge,Fitness Coach,3,8
+Artist,Makeup Artist,Artist,Lawyer,3,8
+Translator,Technical Writer,Translator,Physiotherapist,3,8
+Lawyer,Judge,Lawyer,Sports Therapist,2,5
+Sports Therapist,Yoga Instructor,Sports Therapist,Jeweler,3,8
+Project Manager,Business Analyst,Project Manager,Veterinarian,3,8
+Manager,Human Resources Manager,Manager,Barista / Waitor,2,5
+Yoga Instructor,Personal Trainer,Yoga Instructor,Medical Doctor,5,17
+Business Analyst,Project Manager,Business Analyst,Barista / Waitor,1,3
+Marketing Manager,Human Resources Manager,Marketing Manager,Makeup Artist,1,3
+Makeup Artist,Hairdresser / Barber,Makeup Artist,Lawyer,1,3
+Tour Guide,Hotel / Restaurant Manager,Tour Guide,Translator,5,17
+Machinist,Pilot,Machinist,Tour Guide,4,12
+Teacher,Professor,Teacher,UX/UI Designer,4,12
+AI Development,Full Stack Developer,AI Development,Marketing Manager,5,17
+Marketing Manager,Manager,Marketing Manager,Cybersecurity Analyst,5,17
+Electrician,Translator,Electrician,Pilot,5,17
+Hotel / Restaurant Manager,Event Planner,Hotel / Restaurant Manager,Sports Therapist,4,12
+Barista / Waitor,Tour Guide,Barista / Waitor,Personal Trainer,4,12
+Fitness Coach,Sports Therapist,Fitness Coach,Barista / Waitor,5,17
+Chef,Hotel / Restaurant Manager,Chef,Event Planner,5,17
+Fitness Coach,Sports Therapist,Fitness Coach,Hotel / Restaurant Manager,4,12
+Professor,Teacher,Professor,Electrician,5,17
+Sports Therapist,Personal Trainer,Sports Therapist,Teacher,1,3
+Machinist,Technical Writer,Machinist,Makeup Artist,4,12
+Flutter Developer,UX/UI Designer,Flutter Developer,UX/UI Designer,5,18
+Professor,Teacher,Professor,Translator,5,17
+Professor,Teacher,Professor,Marketing Manager,1,3
+Makeup Artist,Jeweler,Makeup Artist,Technical Writer,4,12
+Artist,Makeup Artist,Artist,Jeweler,5,17
+Makeup Artist,Artist,Makeup Artist,Project Manager,2,5
+Barista / Waitor,Tour Guide,Barista / Waitor,Translator,1,3
+Marketing Manager,Manager,Marketing Manager,IT Engineer,2,5
+Teacher,Professor,Teacher,Electrician,4,12
+Lawyer,Judge,Lawyer,Yoga Instructor,1,3
+Artist,Makeup Artist,Artist,Physiotherapist,5,17
+Civil Engineer,Back End Developer,Civil Engineer,Barista / Waitor,5,17
+Project Manager,Manager,Project Manager,Front End Developer,3,8
+Jeweler,Hairdresser / Barber,Jeweler,Nurse,2,5
+Jeweler,Artist,Jeweler,Dentist,5,17
+Professor,Teacher,Professor,Graphic Designer,1,3
+Yoga Instructor,Sports Therapist,Yoga Instructor,Judge,2,5
+Fitness Coach,Yoga Instructor,Fitness Coach,Civil Engineer,3,8
+Fitness Coach,Sports Therapist,Fitness Coach,Chemical Engineer,1,3
+Florist,Electrician,Florist,IT Engineer,5,17
+Game Developer,UX/UI Designer,Game Developer,Front End Developer,5,17
+Manager,Human Resources Manager,Manager,Dentist,3,8
+IT Engineer,Civil Engineer,IT Engineer,Solutions Architect,5,17
+Jeweler,Artist,Jeweler,Fitness Coach,4,12
+Teacher,Professor,Teacher,Marketing Manager,3,8
+Medical Doctor,Physiotherapist,Medical Doctor,Nurse,3,8
+Manager,Human Resources Manager,Manager,Technical Writer,2,5
+Judge,Lawyer,Judge,Nurse,5,17
+Pilot,Florist,Pilot,Environmental Engineer,1,3
+Barista / Waitor,Tour Guide,Barista / Waitor,Back End Developer,2,5
+Pilot,Florist,Pilot,Environmental Engineer,2,5
+Lab Technician,Nurse,Lab Technician,Nurse,1,4
+Teacher,Professor,Teacher,Barista / Waitor,1,3
+Business Analyst,Manager,Business Analyst,Chef,5,17
+Front End Developer,Biomedical Engineer,Front End Developer,Business Analyst,4,12
+Chemical Engineer,Flutter Developer,Chemical Engineer,Jeweler,5,17
+Tour Guide,Barista / Waitor,Tour Guide,Pharmacist,1,3
+Florist,Technical Writer,Florist,Biomedical Engineer,4,12
+Hairdresser / Barber,Artist,Hairdresser / Barber,UX/UI Designer,5,17
+Manager,Marketing Manager,Manager,Environmental Engineer,1,3
+Graphic Designer,AI Development,Graphic Designer,Full Stack Developer,3,8
+Human Resources Manager,Business Analyst,Human Resources Manager,Tour Guide,3,8
+Personal Trainer,Sports Therapist,Personal Trainer,Back End Developer,5,17
+Pharmacist,Veterinarian,Pharmacist,Civil Engineer,1,3
+Sports Therapist,Fitness Coach,Sports Therapist,Teacher,1,3
+Project Manager,Marketing Manager,Project Manager,Event Planner,4,12
+Makeup Artist,Artist,Makeup Artist,Back End Developer,3,8
+Fitness Coach,Sports Therapist,Fitness Coach,Machinist,3,8
+Marketing Manager,Manager,Marketing Manager,Chemical Engineer,1,3
+Professor,Teacher,Professor,Pharmacist,3,8
+Yoga Instructor,Personal Trainer,Yoga Instructor,Technical Writer,5,17
+Professor,Teacher,Professor,Biomedical Engineer,5,17
+Technical Writer,Electrician,Technical Writer,Medical Doctor,4,12
+Dentist,Medical Doctor,Dentist,Biomedical Engineer,5,17
+Machinist,Cybersecurity Analyst,Machinist,Technical Writer,1,3
+Marketing Manager,Manager,Marketing Manager,Technical Writer,4,12
+Civil Engineer,Electrical Engineer,Civil Engineer,Human Resources Manager,1,3
+Cybersecurity Analyst,Technical Writer,Cybersecurity Analyst,Civil Engineer,3,8
+Personal Trainer,Fitness Coach,Personal Trainer,Front End Developer,1,3
+Personal Trainer,Fitness Coach,Personal Trainer,Fitness Coach,1,4
+Professor,Teacher,Professor,Flutter Developer,1,3
+Judge,Lawyer,Judge,AI Development,4,12
+Artist,Jeweler,Artist,Lawyer,2,5
+Civil Engineer,Game Developer,Civil Engineer,Veterinarian,5,17
+Front End Developer,UX/UI Designer,Front End Developer,Florist,2,5
+Business Analyst,Marketing Manager,Business Analyst,Environmental Engineer,4,12
+Florist,Translator,Florist,Professor,5,17
+Event Planner,Chef,Event Planner,Tour Guide,4,12
+Artist,Makeup Artist,Artist,UX/UI Designer,5,17
+Human Resources Manager,Business Analyst,Human Resources Manager,Translator,2,5
+Human Resources Manager,Marketing Manager,Human Resources Manager,Chemical Engineer,1,3
+Hairdresser / Barber,Jeweler,Hairdresser / Barber,Physiotherapist,1,3
+Sports Therapist,Yoga Instructor,Sports Therapist,Hairdresser / Barber,3,8
+Barista / Waitor,Hotel / Restaurant Manager,Barista / Waitor,Makeup Artist,2,5
+Hotel / Restaurant Manager,Event Planner,Hotel / Restaurant Manager,Flutter Developer,5,17
+Translator,Electrician,Translator,Fitness Coach,5,17
+Nurse,Veterinarian,Nurse,Electrician,4,12
+Dentist,Physiotherapist,Dentist,Electrical Engineer,5,17
+Tour Guide,Chef,Tour Guide,Florist,5,17
+Human Resources Manager,Business Analyst,Human Resources Manager,IT Engineer,2,5
+Jeweler,Artist,Jeweler,Business Analyst,2,5
+Judge,Lawyer,Judge,Game Developer,3,8
+Lawyer,Judge,Lawyer,Personal Trainer,1,3
+Florist,Translator,Florist,Graphic Designer,4,12
+Artist,Makeup Artist,Artist,Nurse,5,17
+Physiotherapist,Nurse,Physiotherapist,Flutter Developer,3,8
+Teacher,Professor,Teacher,Chef,1,3
+Biomedical Engineer,Mechanical Engineer,Biomedical Engineer,Veterinarian,3,8
+Pilot,Translator,Pilot,Biomedical Engineer,4,12
+Tour Guide,Barista / Waitor,Tour Guide,Back End Developer,1,3
+Electrician,Pilot,Electrician,IT Engineer,2,5
+Translator,Machinist,Translator,Manager,4,12
+Judge,Lawyer,Judge,Translator,1,3
+Teacher,Professor,Teacher,Back End Developer,2,5
+Solutions Architect,Front End Developer,Solutions Architect,Professor,1,3
+Manager,Human Resources Manager,Manager,Marketing Manager,2,5
+Chef,Barista / Waitor,Chef,Electrician,5,17
+Physiotherapist,Lab Technician,Physiotherapist,Human Resources Manager,2,5
+Hairdresser / Barber,Artist,Hairdresser / Barber,Dentist,2,5
+Jeweler,Hairdresser / Barber,Jeweler,Back End Developer,2,5
+Hotel / Restaurant Manager,Chef,Hotel / Restaurant Manager,Technical Writer,2,5
+Pharmacist,Physiotherapist,Pharmacist,Medical Doctor,1,3
+Judge,Lawyer,Judge,Cybersecurity Analyst,2,5
+Artist,Makeup Artist,Artist,Environmental Engineer,5,17
+Lab Technician,Physiotherapist,Lab Technician,AI Development,3,8
+Marketing Manager,Business Analyst,Marketing Manager,Electrical Engineer,4,12
+Physiotherapist,Dentist,Physiotherapist,Teacher,2,5
+Electrician,Cybersecurity Analyst,Electrician,Flutter Developer,5,17
+Dentist,Veterinarian,Dentist,Electrical Engineer,5,17
+Electrical Engineer,UX/UI Designer,Electrical Engineer,Barista / Waitor,3,8
+Barista / Waitor,Event Planner,Barista / Waitor,UX/UI Designer,1,3
+Judge,Lawyer,Judge,Graphic Designer,2,5
+Hotel / Restaurant Manager,Barista / Waitor,Hotel / Restaurant Manager,Event Planner,3,8
+Dentist,Nurse,Dentist,Front End Developer,5,17
+Judge,Lawyer,Judge,Solutions Architect,1,3
+Lawyer,Judge,Lawyer,Jeweler,2,5
+Personal Trainer,Fitness Coach,Personal Trainer,Professor,3,8
+Project Manager,Manager,Project Manager,Makeup Artist,1,3
+Jeweler,Artist,Jeweler,Dentist,5,17
+Professor,Teacher,Professor,Hotel / Restaurant Manager,5,17
+Pharmacist,Medical Doctor,Pharmacist,AI Development,4,12
+Project Manager,Business Analyst,Project Manager,Medical Doctor,2,5
+Manager,Project Manager,Manager,Medical Doctor,4,12
+Hairdresser / Barber,Makeup Artist,Hairdresser / Barber,Barista / Waitor,5,17
+Teacher,Professor,Teacher,Manager,2,5
+Barista / Waitor,Tour Guide,Barista / Waitor,Makeup Artist,5,17
+Sports Therapist,Personal Trainer,Sports Therapist,Tour Guide,5,17
+Marketing Manager,Business Analyst,Marketing Manager,Artist,5,17
+Dentist,Lab Technician,Dentist,Electrical Engineer,2,5
+Barista / Waitor,Chef,Barista / Waitor,Sports Therapist,5,17
+Flutter Developer,Civil Engineer,Flutter Developer,Florist,2,5
+Hotel / Restaurant Manager,Tour Guide,Hotel / Restaurant Manager,Dentist,3,8
+Judge,Lawyer,Judge,Solutions Architect,5,17
+Jeweler,Artist,Jeweler,Business Analyst,3,8
+Teacher,Professor,Teacher,Judge,3,8
+Event Planner,Tour Guide,Event Planner,Lawyer,5,17
+Teacher,Professor,Teacher,Makeup Artist,5,17
+Yoga Instructor,Personal Trainer,Yoga Instructor,Judge,4,12
+Teacher,Professor,Teacher,Pilot,1,3
+Teacher,Professor,Teacher,Pilot,1,3
+Event Planner,Tour Guide,Event Planner,Marketing Manager,5,17
+Judge,Lawyer,Judge,Graphic Designer,3,8
+Barista / Waitor,Tour Guide,Barista / Waitor,Biomedical Engineer,2,5
+Teacher,Professor,Teacher,Medical Doctor,2,5
+Sports Therapist,Fitness Coach,Sports Therapist,Business Analyst,1,3
+Florist,Electrician,Florist,Lab Technician,4,12
+Makeup Artist,Jeweler,Makeup Artist,Jeweler,1,4
+Judge,Lawyer,Judge,Pilot,2,5
+Machinist,Translator,Machinist,Technical Writer,3,8
+Chef,Hotel / Restaurant Manager,Chef,Biomedical Engineer,5,17
+Business Analyst,Marketing Manager,Business Analyst,Pharmacist,5,17
+Yoga Instructor,Sports Therapist,Yoga Instructor,Translator,5,17
+Veterinarian,Pharmacist,Veterinarian,Mechanical Engineer,5,17
+Makeup Artist,Artist,Makeup Artist,Back End Developer,1,3
+Chef,Barista / Waitor,Chef,AI Development,1,3
+AI Development,IT Engineer,AI Development,Manager,1,3
+Teacher,Professor,Teacher,Lawyer,4,12
+Human Resources Manager,Business Analyst,Human Resources Manager,Business Analyst,5,18
+Cybersecurity Analyst,Technical Writer,Cybersecurity Analyst,Front End Developer,4,12
+Technical Writer,Florist,Technical Writer,Marketing Manager,1,3
+Pharmacist,Veterinarian,Pharmacist,Graphic Designer,5,17
+Electrical Engineer,Chemical Engineer,Electrical Engineer,Translator,1,3
+Lab Technician,Veterinarian,Lab Technician,Fitness Coach,5,17
+Artist,Hairdresser / Barber,Artist,Barista / Waitor,5,17
+Jeweler,Artist,Jeweler,Chemical Engineer,1,3
+Judge,Lawyer,Judge,Front End Developer,1,3
+Personal Trainer,Fitness Coach,Personal Trainer,Pilot,2,5
+Teacher,Professor,Teacher,Florist,5,17
+Professor,Teacher,Professor,Event Planner,5,17
+Civil Engineer,Solutions Architect,Civil Engineer,Flutter Developer,3,8
+Physiotherapist,Nurse,Physiotherapist,Medical Doctor,3,8
+Professor,Teacher,Professor,Makeup Artist,3,8
+Judge,Lawyer,Judge,Marketing Manager,4,12
+Manager,Project Manager,Manager,Hairdresser / Barber,2,5
+Flutter Developer,Biomedical Engineer,Flutter Developer,Sports Therapist,2,5
+Hotel / Restaurant Manager,Event Planner,Hotel / Restaurant Manager,Sports Therapist,4,12
+Pilot,Technical Writer,Pilot,Hairdresser / Barber,5,17
+Technical Writer,Florist,Technical Writer,Human Resources Manager,1,3
+Judge,Lawyer,Judge,Graphic Designer,1,3
+Professor,Teacher,Professor,Electrician,4,12
+Cybersecurity Analyst,Florist,Cybersecurity Analyst,Pharmacist,4,12
+Tour Guide,Barista / Waitor,Tour Guide,Teacher,4,12
+Jeweler,Makeup Artist,Jeweler,Dentist,3,8
+Machinist,Translator,Machinist,Translator,1,4
+Human Resources Manager,Manager,Human Resources Manager,Flutter Developer,1,3
+Translator,Electrician,Translator,Lawyer,1,3
+Game Developer,Full Stack Developer,Game Developer,Lab Technician,5,17
+Teacher,Professor,Teacher,Chemical Engineer,1,3
+Professor,Teacher,Professor,Nurse,3,8
+Back End Developer,Solutions Architect,Back End Developer,Yoga Instructor,1,3
+Sports Therapist,Fitness Coach,Sports Therapist,Artist,1,3
+Veterinarian,Dentist,Veterinarian,Electrical Engineer,3,8
+Jeweler,Artist,Jeweler,AI Development,1,3
+Human Resources Manager,Manager,Human Resources Manager,Veterinarian,5,17
+Hairdresser / Barber,Artist,Hairdresser / Barber,Event Planner,2,5
+Barista / Waitor,Chef,Barista / Waitor,Sports Therapist,1,3
+Judge,Lawyer,Judge,Florist,5,17
+Nurse,Veterinarian,Nurse,Chef,5,17
+Judge,Lawyer,Judge,UX/UI Designer,1,3
+Project Manager,Business Analyst,Project Manager,Physiotherapist,4,12
+Teacher,Professor,Teacher,Project Manager,3,8
+Manager,Marketing Manager,Manager,Pilot,1,3
+Makeup Artist,Jeweler,Makeup Artist,Business Analyst,4,12
+Yoga Instructor,Sports Therapist,Yoga Instructor,Mechanical Engineer,4,12
+Dentist,Pharmacist,Dentist,Florist,2,5
+Hotel / Restaurant Manager,Tour Guide,Hotel / Restaurant Manager,Veterinarian,1,3
+Jeweler,Artist,Jeweler,Business Analyst,3,8
+Biomedical Engineer,AI Development,Biomedical Engineer,Electrical Engineer,1,3
+Lab Technician,Medical Doctor,Lab Technician,Technical Writer,2,5
+Teacher,Professor,Teacher,Chemical Engineer,4,12
+Artist,Jeweler,Artist,Manager,3,8
+Judge,Lawyer,Judge,Game Developer,3,8
+Personal Trainer,Fitness Coach,Personal Trainer,Machinist,3,8
+Nurse,Lab Technician,Nurse,Jeweler,3,8
+Teacher,Professor,Teacher,Nurse,3,8
+Business Analyst,Marketing Manager,Business Analyst,Sports Therapist,1,3
+Dentist,Physiotherapist,Dentist,Lab Technician,3,8
+Artist,Jeweler,Artist,Jeweler,1,4
+Hairdresser / Barber,Makeup Artist,Hairdresser / Barber,Lab Technician,1,3
+Artist,Hairdresser / Barber,Artist,Fitness Coach,5,17
+Sports Therapist,Yoga Instructor,Sports Therapist,Environmental Engineer,4,12
+Artist,Hairdresser / Barber,Artist,Teacher,2,5
+Human Resources Manager,Project Manager,Human Resources Manager,Hotel / Restaurant Manager,4,12
+Business Analyst,Marketing Manager,Business Analyst,Translator,2,5
+Event Planner,Chef,Event Planner,Electrical Engineer,4,12
+Yoga Instructor,Fitness Coach,Yoga Instructor,Marketing Manager,2,5
+Project Manager,Marketing Manager,Project Manager,Judge,3,8
+Florist,Technical Writer,Florist,Chemical Engineer,2,5
+Event Planner,Barista / Waitor,Event Planner,Marketing Manager,1,3
+Nurse,Physiotherapist,Nurse,Professor,5,17
+Business Analyst,Marketing Manager,Business Analyst,UX/UI Designer,5,17
+Solutions Architect,Back End Developer,Solutions Architect,Chef,4,12
+Barista / Waitor,Chef,Barista / Waitor,Front End Developer,4,12
+Tour Guide,Hotel / Restaurant Manager,Tour Guide,Graphic Designer,2,5
+Sports Therapist,Fitness Coach,Sports Therapist,Jeweler,2,5
+UX/UI Designer,Civil Engineer,UX/UI Designer,Business Analyst,5,17
+Biomedical Engineer,Back End Developer,Biomedical Engineer,Personal Trainer,3,8
+Tour Guide,Barista / Waitor,Tour Guide,IT Engineer,1,3
+Lab Technician,Pharmacist,Lab Technician,Solutions Architect,2,5
+Event Planner,Tour Guide,Event Planner,Graphic Designer,3,8
+Artist,Hairdresser / Barber,Artist,Yoga Instructor,3,8
+Marketing Manager,Business Analyst,Marketing Manager,Front End Developer,4,12
+Judge,Lawyer,Judge,Teacher,3,8
+Professor,Teacher,Professor,Project Manager,1,3
+Judge,Lawyer,Judge,Cybersecurity Analyst,4,12
+Personal Trainer,Fitness Coach,Personal Trainer,Pilot,1,3
+Technical Writer,Translator,Technical Writer,Chef,2,5
+Personal Trainer,Yoga Instructor,Personal Trainer,Game Developer,4,12
+Biomedical Engineer,IT Engineer,Biomedical Engineer,Yoga Instructor,4,12
+Teacher,Professor,Teacher,Physiotherapist,2,5
+Tour Guide,Event Planner,Tour Guide,Full Stack Developer,4,12
+Manager,Marketing Manager,Manager,Civil Engineer,5,17
+Artist,Hairdresser / Barber,Artist,Hairdresser / Barber,4,13
+IT Engineer,Game Developer,IT Engineer,UX/UI Designer,4,12
+Front End Developer,Full Stack Developer,Front End Developer,Barista / Waitor,2,5
+Translator,Cybersecurity Analyst,Translator,Electrical Engineer,2,5
+Event Planner,Tour Guide,Event Planner,Teacher,5,17
+Pilot,Florist,Pilot,Marketing Manager,5,17
+Professor,Teacher,Professor,Project Manager,3,8
+IT Engineer,Game Developer,IT Engineer,Jeweler,2,5
+Marketing Manager,Manager,Marketing Manager,Veterinarian,3,8
+Judge,Lawyer,Judge,Event Planner,2,5
+Manager,Human Resources Manager,Manager,Personal Trainer,2,5
+Project Manager,Business Analyst,Project Manager,Professor,2,5
+Sports Therapist,Personal Trainer,Sports Therapist,Lawyer,3,8
+Project Manager,Business Analyst,Project Manager,Artist,1,3
+Jeweler,Artist,Jeweler,Veterinarian,1,3
+Barista / Waitor,Hotel / Restaurant Manager,Barista / Waitor,Sports Therapist,2,5
+Manager,Marketing Manager,Manager,Mechanical Engineer,4,12
+Project Manager,Business Analyst,Project Manager,Chemical Engineer,2,5
+Translator,Cybersecurity Analyst,Translator,Game Developer,3,8
+Manager,Marketing Manager,Manager,AI Development,4,12
+Mechanical Engineer,Flutter Developer,Mechanical Engineer,Human Resources Manager,1,3
+Translator,Machinist,Translator,Jeweler,5,17
+Marketing Manager,Business Analyst,Marketing Manager,Nurse,2,5
+Barista / Waitor,Tour Guide,Barista / Waitor,Project Manager,3,8
+Tour Guide,Hotel / Restaurant Manager,Tour Guide,Lawyer,4,12
+Flutter Developer,Graphic Designer,Flutter Developer,Chef,3,8
+Yoga Instructor,Personal Trainer,Yoga Instructor,Graphic Designer,3,8
+Yoga Instructor,Sports Therapist,Yoga Instructor,Manager,3,8
+Personal Trainer,Sports Therapist,Personal Trainer,Graphic Designer,5,17
+Marketing Manager,Manager,Marketing Manager,Cybersecurity Analyst,3,8
+Human Resources Manager,Project Manager,Human Resources Manager,Veterinarian,2,5
+Tour Guide,Chef,Tour Guide,Chemical Engineer,3,8
+Lab Technician,Nurse,Lab Technician,Jeweler,1,3
+Solutions Architect,UX/UI Designer,Solutions Architect,Yoga Instructor,2,5
+Jeweler,Hairdresser / Barber,Jeweler,Veterinarian,3,8
+Translator,Machinist,Translator,Electrical Engineer,3,8
+Teacher,Professor,Teacher,Tour Guide,4,12
+Technical Writer,Electrician,Technical Writer,Chef,1,3
+Teacher,Professor,Teacher,Electrician,5,17
+Marketing Manager,Business Analyst,Marketing Manager,Barista / Waitor,3,8
+Dentist,Physiotherapist,Dentist,Judge,1,3
+Fitness Coach,Yoga Instructor,Fitness Coach,Veterinarian,2,5
+Lawyer,Judge,Lawyer,Project Manager,5,17
+Marketing Manager,Business Analyst,Marketing Manager,Flutter Developer,3,8
+Sports Therapist,Fitness Coach,Sports Therapist,Veterinarian,1,3
+Business Analyst,Marketing Manager,Business Analyst,UX/UI Designer,3,8
+Game Developer,Mechanical Engineer,Game Developer,Florist,3,8
+Lawyer,Judge,Lawyer,Chemical Engineer,2,5
+Human Resources Manager,Project Manager,Human Resources Manager,IT Engineer,1,3
+Professor,Teacher,Professor,Chef,3,8
+Sports Therapist,Personal Trainer,Sports Therapist,Judge,1,3
+Judge,Lawyer,Judge,Graphic Designer,1,3
+Human Resources Manager,Business Analyst,Human Resources Manager,Back End Developer,3,8
+Teacher,Professor,Teacher,Pharmacist,5,17
+Judge,Lawyer,Judge,Tour Guide,5,17
+Teacher,Professor,Teacher,Human Resources Manager,4,12
+Manager,Marketing Manager,Manager,AI Development,5,17
+Teacher,Professor,Teacher,Solutions Architect,2,5
+Graphic Designer,Electrical Engineer,Graphic Designer,Yoga Instructor,1,3
+Full Stack Developer,Environmental Engineer,Full Stack Developer,Hotel / Restaurant Manager,1,3
+Judge,Lawyer,Judge,Chemical Engineer,5,17
+IT Engineer,Biomedical Engineer,IT Engineer,Tour Guide,1,3
+Electrician,Pilot,Electrician,Full Stack Developer,5,17
+Lawyer,Judge,Lawyer,Veterinarian,5,17
+Barista / Waitor,Chef,Barista / Waitor,Artist,2,5
+Chef,Barista / Waitor,Chef,Front End Developer,1,3
+Lab Technician,Veterinarian,Lab Technician,Artist,2,5
+Chef,Event Planner,Chef,Judge,4,12
+Jeweler,Hairdresser / Barber,Jeweler,Translator,4,12
+Translator,Pilot,Translator,Yoga Instructor,3,8
+Translator,Florist,Translator,Manager,4,12
+Project Manager,Manager,Project Manager,Barista / Waitor,4,12
+Project Manager,Business Analyst,Project Manager,Florist,3,8
+Hairdresser / Barber,Makeup Artist,Hairdresser / Barber,Lawyer,4,12
+Lawyer,Judge,Lawyer,Solutions Architect,4,12
+Artist,Jeweler,Artist,Game Developer,1,3
+Medical Doctor,Nurse,Medical Doctor,Mechanical Engineer,3,8
+Project Manager,Human Resources Manager,Project Manager,Sports Therapist,2,5
+Mechanical Engineer,Electrical Engineer,Mechanical Engineer,Judge,5,17
+Civil Engineer,Solutions Architect,Civil Engineer,Judge,4,12
+Yoga Instructor,Personal Trainer,Yoga Instructor,Dentist,5,17
+Yoga Instructor,Personal Trainer,Yoga Instructor,Physiotherapist,4,12
+Solutions Architect,Front End Developer,Solutions Architect,Translator,1,3
+Physiotherapist,Lab Technician,Physiotherapist,AI Development,5,17
+Dentist,Medical Doctor,Dentist,Translator,3,8
+Electrician,Cybersecurity Analyst,Electrician,Business Analyst,4,12
+Jeweler,Artist,Jeweler,Hotel / Restaurant Manager,3,8
+Graphic Designer,AI Development,Graphic Designer,Makeup Artist,1,3
+Florist,Technical Writer,Florist,Judge,1,3
+Judge,Lawyer,Judge,Electrician,1,3
+Nurse,Veterinarian,Nurse,UX/UI Designer,1,3
+Biomedical Engineer,Electrical Engineer,Biomedical Engineer,Pharmacist,4,12
+Technical Writer,Cybersecurity Analyst,Technical Writer,Lab Technician,4,12
+Solutions Architect,Chemical Engineer,Solutions Architect,Florist,3,8
+Nurse,Dentist,Nurse,Front End Developer,5,17
+Manager,Human Resources Manager,Manager,Graphic Designer,2,5
+Florist,Electrician,Florist,Jeweler,4,12
+Nurse,Dentist,Nurse,Manager,2,5
+Nurse,Dentist,Nurse,Business Analyst,2,5
+Veterinarian,Dentist,Veterinarian,Tour Guide,3,8
+Judge,Lawyer,Judge,Cybersecurity Analyst,5,17
+Translator,Pilot,Translator,Tour Guide,3,8
+Cybersecurity Analyst,Electrician,Cybersecurity Analyst,Sports Therapist,1,3
+Technical Writer,Florist,Technical Writer,Event Planner,5,17
+Teacher,Professor,Teacher,Cybersecurity Analyst,1,3
+Teacher,Professor,Teacher,Project Manager,5,17
+Yoga Instructor,Sports Therapist,Yoga Instructor,Pharmacist,4,12
+Makeup Artist,Artist,Makeup Artist,Yoga Instructor,2,5
+Artist,Hairdresser / Barber,Artist,Physiotherapist,5,17
+Professor,Teacher,Professor,Florist,2,5
+Back End Developer,Civil Engineer,Back End Developer,Full Stack Developer,4,12
+Fitness Coach,Personal Trainer,Fitness Coach,Artist,1,3
+Lawyer,Judge,Lawyer,Veterinarian,5,17
+UX/UI Designer,Solutions Architect,UX/UI Designer,Tour Guide,1,3
+Nurse,Medical Doctor,Nurse,UX/UI Designer,4,12
+Marketing Manager,Business Analyst,Marketing Manager,Technical Writer,4,12
+Marketing Manager,Human Resources Manager,Marketing Manager,Nurse,1,3
+Graphic Designer,Electrical Engineer,Graphic Designer,Full Stack Developer,5,17
+Business Analyst,Human Resources Manager,Business Analyst,Mechanical Engineer,5,17
+Event Planner,Barista / Waitor,Event Planner,Pilot,2,5
+Lawyer,Judge,Lawyer,Solutions Architect,1,3
+Personal Trainer,Yoga Instructor,Personal Trainer,Florist,5,17
+Teacher,Professor,Teacher,Graphic Designer,4,12
+Event Planner,Chef,Event Planner,Jeweler,5,17
+Makeup Artist,Hairdresser / Barber,Makeup Artist,Graphic Designer,4,12
+Teacher,Professor,Teacher,Mechanical Engineer,2,5
+Veterinarian,Physiotherapist,Veterinarian,Tour Guide,2,5
+Yoga Instructor,Sports Therapist,Yoga Instructor,UX/UI Designer,2,5
+Hotel / Restaurant Manager,Chef,Hotel / Restaurant Manager,Nurse,2,5
+Business Analyst,Marketing Manager,Business Analyst,Chef,5,17
+Teacher,Professor,Teacher,Chef,2,5
+Professor,Teacher,Professor,Front End Developer,2,5
+Lab Technician,Physiotherapist,Lab Technician,Biomedical Engineer,3,8
+Event Planner,Tour Guide,Event Planner,Solutions Architect,1,3
+Barista / Waitor,Hotel / Restaurant Manager,Barista / Waitor,Yoga Instructor,5,17
+Jeweler,Hairdresser / Barber,Jeweler,Makeup Artist,1,3
+Fitness Coach,Yoga Instructor,Fitness Coach,Yoga Instructor,4,13
+Full Stack Developer,Mechanical Engineer,Full Stack Developer,Business Analyst,2,5
+Judge,Lawyer,Judge,Manager,1,3
+Personal Trainer,Fitness Coach,Personal Trainer,Yoga Instructor,4,12
+Business Analyst,Project Manager,Business Analyst,AI Development,3,8
+Translator,Technical Writer,Translator,Civil Engineer,4,12
+Yoga Instructor,Personal Trainer,Yoga Instructor,Pharmacist,5,17
+Full Stack Developer,Mechanical Engineer,Full Stack Developer,Translator,3,8
+Makeup Artist,Jeweler,Makeup Artist,AI Development,5,17
+Dentist,Physiotherapist,Dentist,Project Manager,3,8
+Medical Doctor,Lab Technician,Medical Doctor,IT Engineer,1,3
+Physiotherapist,Medical Doctor,Physiotherapist,Makeup Artist,2,5
+Chef,Event Planner,Chef,Hotel / Restaurant Manager,4,12
+Teacher,Professor,Teacher,Professor,1,4
+Chef,Barista / Waitor,Chef,Sports Therapist,5,17
+Artist,Hairdresser / Barber,Artist,Human Resources Manager,4,12
+Chef,Tour Guide,Chef,Graphic Designer,4,12
+Graphic Designer,Game Developer,Graphic Designer,Technical Writer,4,12
+Cybersecurity Analyst,Translator,Cybersecurity Analyst,Barista / Waitor,2,5
+Barista / Waitor,Chef,Barista / Waitor,Veterinarian,1,3
+Hairdresser / Barber,Makeup Artist,Hairdresser / Barber,Yoga Instructor,3,8
+Yoga Instructor,Personal Trainer,Yoga Instructor,Veterinarian,2,5
+Medical Doctor,Veterinarian,Medical Doctor,Florist,3,8
+Back End Developer,Solutions Architect,Back End Developer,Yoga Instructor,4,12
+Yoga Instructor,Sports Therapist,Yoga Instructor,Sports Therapist,1,4
+UX/UI Designer,Mechanical Engineer,UX/UI Designer,Yoga Instructor,4,12
+Hotel / Restaurant Manager,Chef,Hotel / Restaurant Manager,Nurse,5,17
+Hairdresser / Barber,Makeup Artist,Hairdresser / Barber,Translator,3,8
+Personal Trainer,Yoga Instructor,Personal Trainer,Chemical Engineer,2,5
+Translator,Florist,Translator,Project Manager,2,5
+Florist,Cybersecurity Analyst,Florist,Fitness Coach,2,5
+Veterinarian,Dentist,Veterinarian,Environmental Engineer,2,5
+AI Development,IT Engineer,AI Development,Physiotherapist,4,12
+Business Analyst,Manager,Business Analyst,Solutions Architect,3,8
+Technical Writer,Machinist,Technical Writer,IT Engineer,3,8
+Project Manager,Manager,Project Manager,Event Planner,2,5
+Lawyer,Judge,Lawyer,Solutions Architect,5,17
+Lawyer,Judge,Lawyer,Physiotherapist,3,8
+Medical Doctor,Pharmacist,Medical Doctor,Sports Therapist,1,3
+Personal Trainer,Fitness Coach,Personal Trainer,Human Resources Manager,5,17
+Manager,Human Resources Manager,Manager,Fitness Coach,4,12
+Veterinarian,Dentist,Veterinarian,Business Analyst,4,12
+Makeup Artist,Artist,Makeup Artist,Hairdresser / Barber,1,3
+Fitness Coach,Yoga Instructor,Fitness Coach,Game Developer,4,12
+Sports Therapist,Fitness Coach,Sports Therapist,UX/UI Designer,1,3
+Professor,Teacher,Professor,Cybersecurity Analyst,1,3
+Biomedical Engineer,Back End Developer,Biomedical Engineer,Sports Therapist,4,12
+Lawyer,Judge,Lawyer,Sports Therapist,3,8
+Hotel / Restaurant Manager,Event Planner,Hotel / Restaurant Manager,Medical Doctor,5,17
+Judge,Lawyer,Judge,Barista / Waitor,5,17
+Lawyer,Judge,Lawyer,Solutions Architect,4,12
+Project Manager,Business Analyst,Project Manager,Pharmacist,1,3
+Veterinarian,Physiotherapist,Veterinarian,Pharmacist,5,17
+Professor,Teacher,Professor,Judge,5,17
+Human Resources Manager,Marketing Manager,Human Resources Manager,Pilot,1,3
+Tour Guide,Barista / Waitor,Tour Guide,Teacher,2,5
+Judge,Lawyer,Judge,Back End Developer,3,8
+Florist,Cybersecurity Analyst,Florist,Hotel / Restaurant Manager,4,12
+Dentist,Lab Technician,Dentist,Teacher,5,17
+Chef,Event Planner,Chef,Yoga Instructor,3,8
+Game Developer,AI Development,Game Developer,Makeup Artist,3,8
+Judge,Lawyer,Judge,Florist,2,5
+Judge,Lawyer,Judge,Hairdresser / Barber,1,3
+Judge,Lawyer,Judge,Event Planner,4,12
+Yoga Instructor,Sports Therapist,Yoga Instructor,Biomedical Engineer,2,5
+Business Analyst,Human Resources Manager,Business Analyst,Electrician,1,3
+Teacher,Professor,Teacher,Chemical Engineer,2,5
+Machinist,Florist,Machinist,Event Planner,1,3
+Hotel / Restaurant Manager,Tour Guide,Hotel / Restaurant Manager,Marketing Manager,3,8
+Lawyer,Judge,Lawyer,Flutter Developer,4,12
+Tour Guide,Event Planner,Tour Guide,Electrical Engineer,5,17
+Event Planner,Hotel / Restaurant Manager,Event Planner,Personal Trainer,3,8
+Human Resources Manager,Project Manager,Human Resources Manager,Lawyer,1,3
+Yoga Instructor,Personal Trainer,Yoga Instructor,Judge,4,12
+Artist,Hairdresser / Barber,Artist,Event Planner,4,12
+Marketing Manager,Business Analyst,Marketing Manager,Teacher,1,3
+Front End Developer,Biomedical Engineer,Front End Developer,Solutions Architect,2,5
+Jeweler,Hairdresser / Barber,Jeweler,Pilot,1,3
+Yoga Instructor,Sports Therapist,Yoga Instructor,Translator,3,8
+Electrician,Pilot,Electrician,Biomedical Engineer,1,3
+Medical Doctor,Physiotherapist,Medical Doctor,Teacher,3,8
+Hotel / Restaurant Manager,Barista / Waitor,Hotel / Restaurant Manager,Teacher,4,12
+Chef,Event Planner,Chef,Business Analyst,3,8
+Lawyer,Judge,Lawyer,Professor,1,3
+Jeweler,Hairdresser / Barber,Jeweler,Event Planner,4,12
+Personal Trainer,Sports Therapist,Personal Trainer,Cybersecurity Analyst,2,5
+Personal Trainer,Fitness Coach,Personal Trainer,Florist,3,8
+Hotel / Restaurant Manager,Barista / Waitor,Hotel / Restaurant Manager,Project Manager,4,12
+Yoga Instructor,Sports Therapist,Yoga Instructor,Project Manager,5,17
+Professor,Teacher,Professor,UX/UI Designer,4,12
+Professor,Teacher,Professor,Physiotherapist,2,5
+Technical Writer,Translator,Technical Writer,Civil Engineer,2,5
+Cybersecurity Analyst,Electrician,Cybersecurity Analyst,Chef,5,17
+Sports Therapist,Personal Trainer,Sports Therapist,Biomedical Engineer,3,8
+Fitness Coach,Sports Therapist,Fitness Coach,Graphic Designer,4,12
+Sports Therapist,Personal Trainer,Sports Therapist,Veterinarian,3,8
+Physiotherapist,Dentist,Physiotherapist,Teacher,4,12
+Business Analyst,Human Resources Manager,Business Analyst,Barista / Waitor,3,8
+Lawyer,Judge,Lawyer,Hairdresser / Barber,3,8
+Project Manager,Manager,Project Manager,Marketing Manager,2,5
+Professor,Teacher,Professor,Front End Developer,2,5
+Barista / Waitor,Tour Guide,Barista / Waitor,Graphic Designer,5,17
+Mechanical Engineer,AI Development,Mechanical Engineer,Lab Technician,3,8
+Judge,Lawyer,Judge,Hotel / Restaurant Manager,3,8
+Makeup Artist,Artist,Makeup Artist,Back End Developer,5,17
+Lawyer,Judge,Lawyer,Biomedical Engineer,2,5
+Makeup Artist,Hairdresser / Barber,Makeup Artist,Cybersecurity Analyst,5,17
+Personal Trainer,Sports Therapist,Personal Trainer,IT Engineer,3,8
+Hotel / Restaurant Manager,Tour Guide,Hotel / Restaurant Manager,Technical Writer,4,12
+Fitness Coach,Personal Trainer,Fitness Coach,IT Engineer,4,12
+Professor,Teacher,Professor,Pilot,2,5
+UX/UI Designer,Game Developer,UX/UI Designer,Event Planner,3,8
+Sports Therapist,Fitness Coach,Sports Therapist,Yoga Instructor,2,5
+Physiotherapist,Medical Doctor,Physiotherapist,Dentist,5,17
+Judge,Lawyer,Judge,Professor,1,3
+Judge,Lawyer,Judge,Pharmacist,1,3
+Nurse,Pharmacist,Nurse,Pharmacist,4,13
+Event Planner,Barista / Waitor,Event Planner,Professor,4,12
+Sports Therapist,Personal Trainer,Sports Therapist,Electrician,2,5
+Hairdresser / Barber,Jeweler,Hairdresser / Barber,Environmental Engineer,2,5
+Makeup Artist,Hairdresser / Barber,Makeup Artist,Electrician,2,5
+Pilot,Electrician,Pilot,Flutter Developer,2,5
+Judge,Lawyer,Judge,Mechanical Engineer,3,8
+Solutions Architect,Game Developer,Solutions Architect,Full Stack Developer,4,12
+Manager,Human Resources Manager,Manager,Back End Developer,3,8
+Lab Technician,Nurse,Lab Technician,Marketing Manager,3,8
+Makeup Artist,Hairdresser / Barber,Makeup Artist,Fitness Coach,4,12
+Personal Trainer,Sports Therapist,Personal Trainer,Business Analyst,1,3
+Lab Technician,Physiotherapist,Lab Technician,Chemical Engineer,2,5
+Manager,Project Manager,Manager,IT Engineer,1,3
+Civil Engineer,Electrical Engineer,Civil Engineer,Barista / Waitor,2,5
+Event Planner,Barista / Waitor,Event Planner,Fitness Coach,2,5
+AI Development,Environmental Engineer,AI Development,Pilot,4,12
+Teacher,Professor,Teacher,Professor,3,9
+Yoga Instructor,Fitness Coach,Yoga Instructor,Lab Technician,4,12
+Judge,Lawyer,Judge,Electrician,3,8
+Fitness Coach,Yoga Instructor,Fitness Coach,Marketing Manager,3,8
+Makeup Artist,Artist,Makeup Artist,Lab Technician,3,8
+Tour Guide,Hotel / Restaurant Manager,Tour Guide,Front End Developer,2,5
+Dentist,Nurse,Dentist,Human Resources Manager,3,8
+Civil Engineer,Biomedical Engineer,Civil Engineer,Judge,3,8
+Judge,Lawyer,Judge,Hotel / Restaurant Manager,3,8
+Sports Therapist,Fitness Coach,Sports Therapist,Biomedical Engineer,3,8
+Nurse,Physiotherapist,Nurse,Business Analyst,4,12
+Yoga Instructor,Sports Therapist,Yoga Instructor,Sports Therapist,3,9
+Nurse,Pharmacist,Nurse,Judge,4,12
+Pilot,Electrician,Pilot,Translator,3,8
+Pharmacist,Dentist,Pharmacist,Human Resources Manager,5,17
+Makeup Artist,Jeweler,Makeup Artist,IT Engineer,2,5
+Teacher,Professor,Teacher,Personal Trainer,1,3
+Lab Technician,Physiotherapist,Lab Technician,Project Manager,1,3
+Business Analyst,Human Resources Manager,Business Analyst,Personal Trainer,2,5
+Pilot,Translator,Pilot,Electrician,5,17
+Hotel / Restaurant Manager,Barista / Waitor,Hotel / Restaurant Manager,Tour Guide,4,12
+Lab Technician,Pharmacist,Lab Technician,Jeweler,5,17
+Pharmacist,Lab Technician,Pharmacist,Fitness Coach,5,17
+Chemical Engineer,Game Developer,Chemical Engineer,Medical Doctor,2,5
+Hairdresser / Barber,Jeweler,Hairdresser / Barber,Teacher,2,5
+Pilot,Electrician,Pilot,Lab Technician,4,12
+AI Development,Solutions Architect,AI Development,Environmental Engineer,3,8
+Pilot,Florist,Pilot,Artist,4,12
+Hairdresser / Barber,Jeweler,Hairdresser / Barber,Human Resources Manager,1,3
+Lawyer,Judge,Lawyer,Back End Developer,4,12
+Physiotherapist,Medical Doctor,Physiotherapist,Project Manager,1,3
+Lab Technician,Nurse,Lab Technician,Marketing Manager,5,17
+Cybersecurity Analyst,Machinist,Cybersecurity Analyst,Chef,1,3
+Project Manager,Human Resources Manager,Project Manager,Professor,1,3
+Physiotherapist,Dentist,Physiotherapist,Project Manager,5,17
+Yoga Instructor,Fitness Coach,Yoga Instructor,Professor,5,17
+Sports Therapist,Fitness Coach,Sports Therapist,Business Analyst,2,5
+Business Analyst,Manager,Business Analyst,Full Stack Developer,4,12
+Manager,Human Resources Manager,Manager,Artist,2,5
+Fitness Coach,Yoga Instructor,Fitness Coach,Flutter Developer,1,3
+Sports Therapist,Fitness Coach,Sports Therapist,UX/UI Designer,3,8
+Pilot,Electrician,Pilot,Environmental Engineer,5,17
+Judge,Lawyer,Judge,Machinist,5,17
+Manager,Business Analyst,Manager,Florist,3,8
+Electrical Engineer,Chemical Engineer,Electrical Engineer,Lab Technician,5,17
+Hotel / Restaurant Manager,Event Planner,Hotel / Restaurant Manager,Business Analyst,3,8
+Judge,Lawyer,Judge,Pharmacist,3,8
+Chef,Event Planner,Chef,Jeweler,4,12
+Physiotherapist,Veterinarian,Physiotherapist,Game Developer,4,12
+Judge,Lawyer,Judge,Mechanical Engineer,5,17
+Professor,Teacher,Professor,Barista / Waitor,3,8
+Lawyer,Judge,Lawyer,Teacher,3,8
+Chef,Hotel / Restaurant Manager,Chef,Barista / Waitor,2,5
+Yoga Instructor,Sports Therapist,Yoga Instructor,Dentist,1,3
+Professor,Teacher,Professor,Human Resources Manager,2,5
+Nurse,Veterinarian,Nurse,Lab Technician,5,17
+Hotel / Restaurant Manager,Event Planner,Hotel / Restaurant Manager,Physiotherapist,2,5
+Medical Doctor,Dentist,Medical Doctor,Translator,4,12
+Human Resources Manager,Project Manager,Human Resources Manager,Business Analyst,3,8
+Hotel / Restaurant Manager,Event Planner,Hotel / Restaurant Manager,IT Engineer,2,5
+Fitness Coach,Sports Therapist,Fitness Coach,Biomedical Engineer,3,8
+Florist,Machinist,Florist,Technical Writer,3,8
+Makeup Artist,Artist,Makeup Artist,Mechanical Engineer,2,5
+Barista / Waitor,Hotel / Restaurant Manager,Barista / Waitor,Fitness Coach,1,3
+Judge,Lawyer,Judge,Pilot,3,8
+Lab Technician,Pharmacist,Lab Technician,Fitness Coach,5,17
+Hotel / Restaurant Manager,Event Planner,Hotel / Restaurant Manager,Medical Doctor,1,3
+Makeup Artist,Artist,Makeup Artist,AI Development,1,3
+Environmental Engineer,Game Developer,Environmental Engineer,Teacher,1,3
+Teacher,Professor,Teacher,Business Analyst,3,8
+Machinist,Pilot,Machinist,Front End Developer,1,3
+Full Stack Developer,Graphic Designer,Full Stack Developer,Chemical Engineer,5,17
+Electrician,Technical Writer,Electrician,Project Manager,3,8
+Teacher,Professor,Teacher,Electrician,1,3
+Judge,Lawyer,Judge,Dentist,5,17
+Jeweler,Makeup Artist,Jeweler,Hairdresser / Barber,5,17
+Business Analyst,Manager,Business Analyst,Veterinarian,1,3
+Jeweler,Makeup Artist,Jeweler,Fitness Coach,4,12
+Hairdresser / Barber,Jeweler,Hairdresser / Barber,Technical Writer,1,3
+Judge,Lawyer,Judge,Nurse,3,8
+Flutter Developer,Environmental Engineer,Flutter Developer,Project Manager,5,17
+Electrician,Machinist,Electrician,Mechanical Engineer,5,17
+Lawyer,Judge,Lawyer,Pilot,5,17
+Chef,Tour Guide,Chef,Hairdresser / Barber,1,3
+Nurse,Medical Doctor,Nurse,Chemical Engineer,5,17
+Hotel / Restaurant Manager,Event Planner,Hotel / Restaurant Manager,Nurse,5,17
+Medical Doctor,Pharmacist,Medical Doctor,Fitness Coach,5,17
+Hairdresser / Barber,Artist,Hairdresser / Barber,Veterinarian,2,5
+Sports Therapist,Yoga Instructor,Sports Therapist,Machinist,5,17
+Teacher,Professor,Teacher,Human Resources Manager,3,8
+Marketing Manager,Human Resources Manager,Marketing Manager,AI Development,3,8
+Teacher,Professor,Teacher,Barista / Waitor,5,17
+Personal Trainer,Fitness Coach,Personal Trainer,Dentist,4,12
+Lab Technician,Veterinarian,Lab Technician,Electrician,5,17
+Human Resources Manager,Business Analyst,Human Resources Manager,Chemical Engineer,2,5
+Judge,Lawyer,Judge,Manager,2,5
+Judge,Lawyer,Judge,Back End Developer,3,8
+Yoga Instructor,Personal Trainer,Yoga Instructor,Mechanical Engineer,2,5
+Chef,Tour Guide,Chef,Teacher,4,12
+Translator,Pilot,Translator,Physiotherapist,3,8
+Judge,Lawyer,Judge,Jeweler,3,8
+Human Resources Manager,Business Analyst,Human Resources Manager,Project Manager,2,5
+Dentist,Veterinarian,Dentist,Hotel / Restaurant Manager,4,12
+Yoga Instructor,Sports Therapist,Yoga Instructor,Personal Trainer,5,17
+Sports Therapist,Fitness Coach,Sports Therapist,Business Analyst,3,8
+Jeweler,Hairdresser / Barber,Jeweler,Yoga Instructor,3,8
+Hairdresser / Barber,Makeup Artist,Hairdresser / Barber,Flutter Developer,1,3
+Lawyer,Judge,Lawyer,Personal Trainer,4,12
+Cybersecurity Analyst,Florist,Cybersecurity Analyst,Florist,5,18
+Personal Trainer,Fitness Coach,Personal Trainer,Chemical Engineer,2,5
+Barista / Waitor,Hotel / Restaurant Manager,Barista / Waitor,Project Manager,5,17
+Professor,Teacher,Professor,Back End Developer,5,17
+Lab Technician,Pharmacist,Lab Technician,Chef,5,17
+Veterinarian,Dentist,Veterinarian,Project Manager,4,12
+Lawyer,Judge,Lawyer,Nurse,2,5
+Electrical Engineer,UX/UI Designer,Electrical Engineer,Manager,2,5
+Tour Guide,Hotel / Restaurant Manager,Tour Guide,Lawyer,4,12
+Hotel / Restaurant Manager,Chef,Hotel / Restaurant Manager,Electrician,5,17
+Environmental Engineer,Graphic Designer,Environmental Engineer,Graphic Designer,4,13
+Teacher,Professor,Teacher,Mechanical Engineer,4,12
+Business Analyst,Marketing Manager,Business Analyst,Chef,1,3
+Cybersecurity Analyst,Technical Writer,Cybersecurity Analyst,Barista / Waitor,1,3
+Biomedical Engineer,Front End Developer,Biomedical Engineer,Hairdresser / Barber,3,8
+Dentist,Physiotherapist,Dentist,Solutions Architect,5,17
+Mechanical Engineer,IT Engineer,Mechanical Engineer,IT Engineer,4,13
+Professor,Teacher,Professor,Human Resources Manager,2,5
+Environmental Engineer,Front End Developer,Environmental Engineer,Lab Technician,3,8
+Hotel / Restaurant Manager,Barista / Waitor,Hotel / Restaurant Manager,Human Resources Manager,4,12
+Technical Writer,Florist,Technical Writer,Human Resources Manager,5,17
+Marketing Manager,Human Resources Manager,Marketing Manager,Solutions Architect,1,3
+Cybersecurity Analyst,Pilot,Cybersecurity Analyst,Professor,5,17
+Civil Engineer,Graphic Designer,Civil Engineer,IT Engineer,2,5
+Yoga Instructor,Personal Trainer,Yoga Instructor,Makeup Artist,2,5
+Project Manager,Business Analyst,Project Manager,Sports Therapist,3,8
+Judge,Lawyer,Judge,Fitness Coach,4,12
+Event Planner,Tour Guide,Event Planner,Nurse,3,8
+Artist,Jeweler,Artist,IT Engineer,4,12
+Back End Developer,Electrical Engineer,Back End Developer,Biomedical Engineer,2,5
+Lawyer,Judge,Lawyer,Translator,1,3
+Artist,Jeweler,Artist,Biomedical Engineer,5,17
+Judge,Lawyer,Judge,Game Developer,3,8
+Pharmacist,Lab Technician,Pharmacist,Front End Developer,4,12
+Nurse,Veterinarian,Nurse,Game Developer,2,5
+Fitness Coach,Sports Therapist,Fitness Coach,UX/UI Designer,2,5
+Professor,Teacher,Professor,Technical Writer,2,5
+Yoga Instructor,Personal Trainer,Yoga Instructor,Pilot,4,12
+Judge,Lawyer,Judge,Graphic Designer,4,12
+Yoga Instructor,Personal Trainer,Yoga Instructor,Machinist,1,3
+Lab Technician,Physiotherapist,Lab Technician,Makeup Artist,1,3
+Project Manager,Human Resources Manager,Project Manager,Veterinarian,5,17
+Teacher,Professor,Teacher,Full Stack Developer,5,17
+Machinist,Florist,Machinist,Back End Developer,5,17
+Personal Trainer,Fitness Coach,Personal Trainer,AI Development,5,17
+Jeweler,Artist,Jeweler,Physiotherapist,1,3
+Marketing Manager,Human Resources Manager,Marketing Manager,Hotel / Restaurant Manager,5,17
+Florist,Pilot,Florist,Event Planner,3,8
+Veterinarian,Nurse,Veterinarian,Mechanical Engineer,5,17
+Human Resources Manager,Project Manager,Human Resources Manager,Makeup Artist,2,5
+Mechanical Engineer,Back End Developer,Mechanical Engineer,Cybersecurity Analyst,2,5
+Event Planner,Hotel / Restaurant Manager,Event Planner,IT Engineer,1,3
+Manager,Project Manager,Manager,Barista / Waitor,1,3
+Judge,Lawyer,Judge,Lawyer,1,4
+Lawyer,Judge,Lawyer,Artist,1,3
+Yoga Instructor,Fitness Coach,Yoga Instructor,Environmental Engineer,2,5
+Event Planner,Hotel / Restaurant Manager,Event Planner,Dentist,3,8
+Judge,Lawyer,Judge,Mechanical Engineer,2,5
+Full Stack Developer,Chemical Engineer,Full Stack Developer,Physiotherapist,3,8
+Professor,Teacher,Professor,Project Manager,3,8
+Lawyer,Judge,Lawyer,Teacher,3,8
+Project Manager,Manager,Project Manager,Physiotherapist,2,5
+Electrician,Pilot,Electrician,Graphic Designer,5,17
+Yoga Instructor,Personal Trainer,Yoga Instructor,Translator,2,5
+Chef,Event Planner,Chef,Back End Developer,4,12
+Event Planner,Barista / Waitor,Event Planner,Hairdresser / Barber,4,12
+Medical Doctor,Dentist,Medical Doctor,Artist,3,8
+Hairdresser / Barber,Artist,Hairdresser / Barber,Manager,3,8
+Judge,Lawyer,Judge,Electrician,1,3
+Judge,Lawyer,Judge,Lawyer,2,6
+Marketing Manager,Manager,Marketing Manager,Personal Trainer,4,12
+Physiotherapist,Medical Doctor,Physiotherapist,Chef,5,17
+Business Analyst,Marketing Manager,Business Analyst,Mechanical Engineer,3,8
+Makeup Artist,Hairdresser / Barber,Makeup Artist,Business Analyst,4,12
+Yoga Instructor,Fitness Coach,Yoga Instructor,Machinist,1,3
+Lawyer,Judge,Lawyer,Front End Developer,1,3
+Electrician,Translator,Electrician,Personal Trainer,2,5
+Judge,Lawyer,Judge,Florist,5,17
+Lawyer,Judge,Lawyer,Yoga Instructor,1,3
+Tour Guide,Event Planner,Tour Guide,Personal Trainer,4,12
+Judge,Lawyer,Judge,Pilot,1,3
+Fitness Coach,Personal Trainer,Fitness Coach,UX/UI Designer,5,17
+Professor,Teacher,Professor,Event Planner,5,17
+Physiotherapist,Veterinarian,Physiotherapist,Lab Technician,3,8
+Chemical Engineer,Solutions Architect,Chemical Engineer,Hotel / Restaurant Manager,2,5
+Personal Trainer,Fitness Coach,Personal Trainer,Makeup Artist,4,12
+Makeup Artist,Hairdresser / Barber,Makeup Artist,Lab Technician,3,8
+Hairdresser / Barber,Artist,Hairdresser / Barber,Translator,5,17
+Nurse,Medical Doctor,Nurse,Yoga Instructor,2,5
+Fitness Coach,Personal Trainer,Fitness Coach,Project Manager,3,8
+Technical Writer,Pilot,Technical Writer,Translator,4,12
