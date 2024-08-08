@@ -179,13 +179,23 @@ def suitable_job_announcements(request, user_id):
     job_announcements = JobAnnouncement.objects.filter(branch__city=user_city)
 
     suitable_jobs = []
+    user_skills = user.skill_set.all()
+    has_skills = user_skills.exists()
+
     for job_announcement in job_announcements:
-        if check_job_suitability(job_announcement, user) == 1:
+        if has_skills and check_job_suitability(job_announcement, user) == 1:
             user_point = get_user_points(job_announcement, user)
             suitable_jobs.append((job_announcement, user_point))
+        elif not has_skills:
+            # If user has no skills, add all jobs without user points
+            suitable_jobs.append((job_announcement, 0))
 
     # Sort job announcements by user points in descending order and then by creation date in descending order
-    suitable_jobs.sort(key=lambda x: (-x[1], -x[0].createdAt.toordinal()))
+    if has_skills:
+        suitable_jobs.sort(key=lambda x: (-x[1], -x[0].createdAt.toordinal()))
+    else:
+        # If no skills, sort only by creation date
+        suitable_jobs.sort(key=lambda x: -x[0].createdAt.toordinal())
 
     # Serialize job announcement data
     job_data = [
@@ -196,7 +206,7 @@ def suitable_job_announcements(request, user_id):
             'experience': job.experience,
             'city': job.branch.city,
             'createdAt': job.createdAt.strftime('%d-%m-%Y'),  # Formatting the date
-            'user_points': points
+            'user_points': points if has_skills else "N/A"  # Points are not applicable if no skills
         }
         for job, points in suitable_jobs
     ]

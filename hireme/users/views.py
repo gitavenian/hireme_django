@@ -25,27 +25,41 @@ def calculate_age(birthdate):
 @parser_classes([MultiPartParser, FormParser])
 def upload_photo(request, user_id):
     try:
+        print("Attempting to retrieve user...")
         user = get_object_or_404(User, pk=user_id)
-        
+        print(f"User retrieved: {user.username}")
+
         file = request.FILES.get('photo')
         if not file:
+            print("No file uploaded")
             return Response({'error': 'No file uploaded'}, status=status.HTTP_400_BAD_REQUEST)
         
-        # Save file to media directory
+        print(f"File received: {file.name}")
+        
+        # Construct file path within media directory
         file_path = os.path.join(settings.MEDIA_ROOT, 'user_photos', file.name)
+        print(f"Saving file to: {file_path}")
+
+        # Save file to the specified path
         with open(file_path, 'wb+') as destination:
             for chunk in file.chunks():
                 destination.write(chunk)
         
+        print("File saved successfully")
+
         # Update user photo path
         user.photo = os.path.join('media', 'user_photos', file.name)
         user.save()
-        
+        print(f"Updated user photo path: {user.photo}")
+
         return Response({'message': 'Photo uploaded successfully', 'image_path': user.photo}, status=status.HTTP_200_OK)
     except User.DoesNotExist:
+        print("User not found")
         return Response({'error': 'User not found'}, status=status.HTTP_404_NOT_FOUND)
     except Exception as e:
+        print(f"An error occurred: {str(e)}")
         return Response({'error': str(e)}, status=status.HTTP_400_BAD_REQUEST)
+    
     
 @require_GET
 def get_user_credentials(request, user_id):
@@ -168,15 +182,24 @@ def manage_language(request):
 def create_user(request):
     if request.method == 'POST':
         try:
+            print("Received request body:", request.body)  # Print raw request body
             data = json.loads(request.body)
+            print("Parsed JSON data:", data)  # Print parsed data
+
             required_fields = ['firstName', 'lastName', 'username', 'password', 'email', 'birthDate', 'address', 'city', 'educationLevel', 'gender', 'phone_number']
             
             # Check if all required fields are present in the request data
             if not all(field in data for field in required_fields):
-                return JsonResponse({'error': 'Missing required fields'}, status=400)
+                missing_fields = [field for field in required_fields if field not in data]
+                print("Missing fields:", missing_fields)  # Print which fields are missing
+                return JsonResponse({'error': 'Missing required fields', 'missing_fields': missing_fields}, status=400)
 
-            # Format the birthDate to dd-mm-yyyy
-            birth_date = datetime.strptime(data['birthDate'], '%d/%m/%Y').date()
+            # Format the birthDate to ISO 8601 format
+            try:
+                birth_date = datetime.fromisoformat(data['birthDate'].split('T')[0])  # splits the datetime string at 'T' and takes only the date part
+            except ValueError as e:
+                print("Birthdate format error:", e)  # Print error if the date format is incorrect
+                return JsonResponse({'error': 'Birthdate format is incorrect. Please use YYYY-MM-DDTHH:MM:SS.SSS format.'}, status=400)
 
             user = User.objects.create(
                 firstName=data['firstName'],
@@ -192,10 +215,14 @@ def create_user(request):
                 phone_number=data['phone_number'],
                 user_type=User.NORMAL
             )
+            print("User created successfully:", user.username)  # Confirm user creation
             return JsonResponse({'message': 'User created successfully'}, status=201)
         except Exception as e:
+            print("Exception occurred:", str(e))  # Print any other exception error
             return JsonResponse({'error': str(e)}, status=400)
-    return JsonResponse({'error': 'Invalid request method'}, status=405)
+    else:
+        print("Invalid request method:", request.method)  # Notify about invalid method
+        return JsonResponse({'error': 'Invalid request method'}, status=405)
 
 @csrf_exempt
 @require_POST
@@ -456,7 +483,8 @@ def delete_photo(request, user_id):
     except Exception as e:
         return Response({'error': str(e)}, status=status.HTTP_400_BAD_REQUEST)
     
-@api_view(['PUT'])
+@csrf_exempt
+@require_POST
 def update_social_media_links(request, user_id):
     try:
         user = get_object_or_404(User, pk=user_id)
@@ -469,9 +497,9 @@ def update_social_media_links(request, user_id):
         
         user.save()
         
-        return Response({'message': 'Social media links updated successfully'}, status=status.HTTP_200_OK)
+        return JsonResponse({'message': 'Social media links updated successfully'}, status=200)
     except Exception as e:
-        return Response({'error': str(e)}, status=status.HTTP_400_BAD_REQUEST)
+        return JsonResponse({'error': str(e)}, status=400)
     
 @require_GET
 def display_user_social_links(request, user_id):

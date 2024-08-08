@@ -58,7 +58,7 @@ class User(models.Model):
         default='Aleppo'
     )
     educationLevel = models.CharField(
-        max_length=20,
+        max_length=25,
         null= False,
         default='Bachelor'
     )
@@ -73,10 +73,9 @@ class User(models.Model):
     user_type = models.IntegerField(default=NORMAL, null=False)
 
     def save(self, *args, **kwargs):
-        # Format the birthDate to dd-mm-yyyy before saving
         if isinstance(self.birthDate, str):
-            self.birthDate = datetime.strptime(self.birthDate, '%d-%m-%Y').date()
+            self.birthDate = datetime.fromisoformat(self.birthDate.split('T')[0]).date()
         super(User, self).save(*args, **kwargs)
 
     def get_birthdate_formatted(self):
-        return self.birthDate.strftime('%d-%m-%Y')
+        return self.birthDate.strftime('%Y-%m-%d')
