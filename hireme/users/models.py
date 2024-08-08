@@ -48,7 +48,7 @@ class User(models.Model):
         null=True
     )
     phone_number = models.CharField(
-        max_length=15 ,
+        max_length=20 ,
         null=False,
         default='0000000000'
     )

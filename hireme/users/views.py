@@ -196,10 +196,10 @@ def create_user(request):
 
             # Format the birthDate to ISO 8601 format
             try:
-                birth_date = datetime.fromisoformat(data['birthDate'].split('T')[0])  # splits the datetime string at 'T' and takes only the date part
+                birth_date = datetime.fromisoformat(data['birthDate'].split('T')[0])  # Splits the datetime string at 'T' and takes only the date part
             except ValueError as e:
                 print("Birthdate format error:", e)  # Print error if the date format is incorrect
-                return JsonResponse({'error': 'Birthdate format is incorrect. Please use YYYY-MM-DDTHH:MM:SS.SSS format.'}, status=400)
+                return JsonResponse({'error': 'Birthdate format is incorrect. Please use YYYY-MM-DD format.'}, status=400)
 
             user = User.objects.create(
                 firstName=data['firstName'],
@@ -216,7 +216,7 @@ def create_user(request):
                 user_type=User.NORMAL
             )
             print("User created successfully:", user.username)  # Confirm user creation
-            return JsonResponse({'message': 'User created successfully'}, status=201)
+            return JsonResponse({'message': 'User created successfully', 'user_id': user.id}, status=201)
         except Exception as e:
             print("Exception occurred:", str(e))  # Print any other exception error
             return JsonResponse({'error': str(e)}, status=400)

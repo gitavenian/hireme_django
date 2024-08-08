@@ -11,7 +11,18 @@ class Branch(models.Model):
     branch_id = models.AutoField(primary_key=True)
     name = models.CharField(max_length=50)
     company = models.ForeignKey('Company', on_delete=models.CASCADE)
-    address = models.CharField(max_length=150)
+    address = models.CharField(max_length=150 , null=True)
+    emails = models.EmailField(
+        max_length=100, 
+        unique=True,
+        null=False,
+        default='example@email.com'
+    )
+    phone_number = models.CharField(
+        max_length=20 ,
+        null=False,
+        default='0000000000'
+    )
     city = models.CharField(max_length=50 , default='Aleppo')
     user_name = models.CharField(max_length=45, unique=True)
     password = models.CharField(max_length=15)
