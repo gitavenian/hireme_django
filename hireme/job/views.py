@@ -18,15 +18,52 @@ from hireme.skills import find_matching_skill
 import logging
 
 
-def get_custom_message(status, first_name, company_name):
+def get_custom_message(status, first_name, company_name, job_title=None, interview_date=None, interview_time=None, place=None):
     templates = {
-        'Waiting': "Dear {name}, your application is under review by {company}. Wish you all the best.",
-        'Accepted': "Congratulations {name}, you have been accepted for the position. We look forward to having you on our team at {company}.",
-        'Rejected': "Thank you for applying, {name}. After careful consideration, we have decided not to move forward with your application at {company}.",
-        'To be Interviewed': "Dear {name}, your application has progressed to the interview stage at {company}. Please check your email for further details."
+        'Waiting': (
+            "Dear {name},\n\n"
+            "Your application is under review by {company}. Wish you all the best.\n\n"
+            "Best regards,\n"
+            "{company} Team"
+        ),
+        'Accepted': (
+            "Dear {name},\n\n"
+            "Congratulations on being accepted for the position of {job_title} at {company}. "
+            "We are excited to welcome you to our team.\n\n"
+            "Please await further instructions regarding the next steps in the onboarding process.\n\n"
+            "Best regards,\n"
+            "{company} Team"
+        ),
+        'Rejected': (
+            "Dear {name},\n\n"
+            "Thank you for your interest in the position of {job_title} at {company}. "
+            "After careful consideration, we regret to inform you that we have decided not to proceed with your application.\n\n"
+            "We appreciate your effort and encourage you to apply for future opportunities that match your skills and experience.\n\n"
+            "Best wishes,\n"
+            "{company} Team"
+        ),
+        'To be Interviewed': (
+            "Dear {name},\n\n"
+            "We are pleased to invite you to an interview for the position of {job_title} at {company}. "
+            "Your interview is scheduled on {interview_date} at {interview_time} in {place}.\n\n"
+            "Please confirm your availability for the scheduled time.\n\n"
+            "Best regards,\n"
+            "{company} Team"
+        )
     }
+
     message = templates.get(status, "Status not recognized")
-    return message.format(name=first_name, company=company_name)
+
+    # Use format with additional parameters for placeholders
+    return message.format(
+        name=first_name,
+        company=company_name,
+        job_title=job_title or "",
+        interview_date=interview_date or "",
+        interview_time=interview_time or "",
+        place=place or ""
+    )
+
 
 def get_status_name(status):
     status_names = {
@@ -373,7 +410,22 @@ def update_or_create_applied_job_status(request):
     except Exception as e:
         return JsonResponse({'error': str(e)}, status=500)
     
+@require_GET
+def get_latest_notification(request, user_id):
+    try:
+        user = get_object_or_404(User, pk=user_id)
+        # Retrieve the latest interview for the user based on date and time
+        interview = Interview.objects.filter(user=user).order_by('-date', '-time').first()
 
+        if not interview:
+            return JsonResponse({'message': 'No notifications available.'}, status=200)
+
+        return JsonResponse({'notification': interview.message}, status=200)
+    except User.DoesNotExist:
+        return JsonResponse({'error': 'User not found.'}, status=404)
+    except Exception as e:
+        return JsonResponse({'error': str(e)}, status=400)
+    
 @csrf_exempt  
 @require_POST
 def toggle_is_available(request, job_announcement_id):

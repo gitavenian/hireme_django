@@ -10,6 +10,7 @@ urlpatterns = [
     path('applied_jobs/<int:job_announcement_id>/', get_applied_jobs_for_announcement, name='get_applied_jobs_for_announcement'),
     path('applied_jobs/user/<int:user_id>/', get_applied_jobs_for_user, name='get_applied_jobs_for_user'),
     path('applied_jobs/status/', update_or_create_applied_job_status, name='update_or_create_applied_job_status'),
+    path('notification/<int:user_id>/', get_latest_notification, name='get_latest_notification'),
     path('job_announcements/<int:job_announcement_id>/toggle_is_available/', toggle_is_available, name='toggle_is_available'),
     path('add_job_nature/', add_job_nature, name='add_job_nature'),
     path('filter/', job_filtered, name='combined_job_search'),

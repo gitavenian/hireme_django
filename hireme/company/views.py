@@ -198,3 +198,28 @@ def filter_users(request, branch_id):
     except Exception as e:
         print(f"Error filtering users: {str(e)}")
         return JsonResponse({'error': str(e)}, status=400)
+
+@require_GET
+def get_skills_by_branch_job_nature(request, branch_id):
+    try:
+        # Get the branch and related job announcements
+        branch = get_object_or_404(Branch, pk=branch_id)
+        job_announcements = JobAnnouncement.objects.filter(branch=branch)
+
+        # Extract job natures from the branch's job opportunities
+        job_natures = set(job_announcement.jobNature.name for job_announcement in job_announcements)
+
+        # Filter skills based on job natures present in the branch's job announcements
+        matching_skills = []
+        for nature in job_natures:
+            if nature in skills:
+                matching_skills.extend(skills[nature])
+
+        response_data = {
+            'job_natures': list(job_natures),
+            'skills': matching_skills
+        }
+
+        return JsonResponse(response_data, status=200)
+    except Exception as e:
+        return JsonResponse({'error': str(e)}, status=400)
