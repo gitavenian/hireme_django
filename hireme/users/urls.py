@@ -22,6 +22,7 @@ urlpatterns = [
     path('<int:user_id>/delete_photo/', delete_photo, name='delete_photo'),
     path('<int:user_id>/display_links/', display_user_social_links, name='display_user_social_links'),
     path('<int:user_id>/update_links/', update_social_media_links, name='update_social_media_links'),
+    path('<int:user_id>/branches/', get_branches_by_user_skill_natures, name='get-branches-by-user-skill-natures'),
 ]
 
 

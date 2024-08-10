@@ -549,7 +549,11 @@ def job_filtered(request):
                 'branch': job.branch.name,
                 'experience': job.experience,
                 'city': job.branch.city,
-                'salary': job.salary,
+                'job_nature':job.jobNature.name,
+                'branch': job.branch.name,
+                'branch_image': job.branch.image,
+                'experience': job.experience,
+                'type':job.type_of_employment,
                 'createdAt': job.createdAt.strftime('%d-%m-%Y')  # Format date as Day-Month-Year
             }
             for job in job_announcements
@@ -561,5 +565,35 @@ def job_filtered(request):
         }
 
         return JsonResponse(response_data, safe=False)  # Use safe=False if you are returning a list
+    except Exception as e:
+        return JsonResponse({'error': str(e)}, status=400)
+    
+@require_GET
+def get_branch_job_announcements(request, branch_id):
+    try:
+        # Get the branch object or return a 404 if not found
+        branch = get_object_or_404(Branch, pk=branch_id)
+
+        # Retrieve job announcements for the branch and sort them by creation date (newest first)
+        job_announcements = JobAnnouncement.objects.filter(branch=branch).order_by('-createdAt')
+
+        # Prepare the data for the response
+        job_data = [
+            {
+                'jobAnnouncement_id': job.jobAnnouncement_id,
+                'job_title': job.job_title,
+                'branch': job.branch.name,
+                'experience': job.experience,
+                'city': job.branch.city,
+                'job_nature': job.jobNature.name,
+                'branch_image': job.branch.image,
+                'type': job.type_of_employment,
+            }
+            for job in job_announcements
+        ]
+
+        # Return the response
+        return JsonResponse({'jobs': job_data, 'count': len(job_data)}, status=200)
+
     except Exception as e:
         return JsonResponse({'error': str(e)}, status=400)

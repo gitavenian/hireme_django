@@ -9,6 +9,7 @@ from django.conf import settings
 from django.http import JsonResponse
 from django.shortcuts import get_object_or_404
 from skills.models import PreviousJob, Skill
+from job.models import JobAnnouncement
 from rest_framework.decorators import api_view, parser_classes
 from rest_framework.parsers import MultiPartParser, FormParser
 from rest_framework.response import Response
@@ -513,3 +514,22 @@ def display_user_social_links(request, user_id):
     }
 
     return JsonResponse(social_links)
+
+@require_GET
+def get_branches_by_user_skill_natures(request, user_id):
+    user = get_object_or_404(User, pk=user_id)
+    
+    # Get the unique set of job natures linked to the user's skills
+    user_job_natures = {skill.jobNature for skill in Skill.objects.filter(user=user)}
+    
+    # Fetch all job announcements that have a job nature matching the user's skill natures
+    matching_job_announcements = JobAnnouncement.objects.filter(jobNature__in=user_job_natures).distinct()
+    
+    # Extract unique branches from these job announcements
+    branches = {announcement.branch.name for announcement in matching_job_announcements}
+    
+    # Prepare the list of branch names
+    branch_names = list(branches)
+    
+    # Return the list of branch names as JSON
+    return JsonResponse({'branches': branch_names, 'count': len(branch_names)})

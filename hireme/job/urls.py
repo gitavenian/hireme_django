@@ -15,6 +15,7 @@ urlpatterns = [
     path('add_job_nature/', add_job_nature, name='add_job_nature'),
     path('filter/', job_filtered, name='combined_job_search'),
     path('job_natures/', get_all_job_natures, name='all_job_natures'),
+    path('branch/job_announcements/<int:branch_id>/', get_branch_job_announcements, name='all_job_natures'),
     path('company_main_page/<int:branch_id>/' , list_users_with_matching_job_nature , name='list_users_with_matching_job_nature')
 ]
 

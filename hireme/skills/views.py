@@ -194,24 +194,25 @@ def get_skills_by_user_id(request, user_id):
 @require_GET
 def get_user_skills(request, user_id):
     try:
-        previous_jobs = PreviousJob.objects.filter(user_id=user_id)
-    
-    # Create a dictionary to count jobs for each skill
+        user = get_object_or_404(User, pk=user_id)  # Ensure the user exists
+        previous_jobs = PreviousJob.objects.filter(user=user)
+
+        # Calculate the number of previous jobs for each skill for normalization
         skill_job_counts = {}
         for job in previous_jobs:
-            skill_name = job.job_name
-            if skill_name in skill_job_counts:
-                skill_job_counts[skill_name] += 1
+            if job.job_name in skill_job_counts:
+                skill_job_counts[job.job_name] += 1
             else:
-                skill_job_counts[skill_name] = 1
-            skills = Skill.objects.select_related('jobNature').filter(user_id=user_id)
-        
+                skill_job_counts[job.job_name] = 1
+
+        skills = Skill.objects.filter(user=user).select_related('jobNature')
         skills_data = []
         for skill in skills:
-            skill_name = skill.skill_name
+            # Normalize experience by the number of jobs held with that skill
             skills_data.append({
-                skill_name
+                'skill_name': skill.skill_name,
             })
-        return JsonResponse({'skills': skills_data}, status=200, safe=False)
+
+        return JsonResponse({'skills': skills_data, 'count': len(skills_data)}, status=200)
     except Exception as e:
         return JsonResponse({'error': str(e)}, status=400)
