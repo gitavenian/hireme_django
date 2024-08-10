@@ -69,29 +69,33 @@ skill_keywords = {
     'Florist': ['florist', 'floral'],
 }
 
-def find_matching_skill(job_title):
+def find_matching_skill(job_title, skill_keywords):
     all_skills = [skill for sublist in skills.values() for skill in sublist]
-
-    # Convert the job title to lower case for case-insensitive matching
     job_title_lower = job_title.lower()
-
-    # Variable to hold the matched skill
     main_skill = None
 
-    # Loop through all skills to find a match based on the keyword variations
+    if not skill_keywords:
+        print("Warning: Skill keywords dictionary is empty.")
+        return 'General Skill'
+
     for skill in all_skills:
         skill_lower = skill.lower()
-        # Check if any keyword related to the skill is in the job title
+        if skill_lower in job_title_lower:
+            main_skill = skill
+            print(f"Direct match found: {main_skill} for job title: {job_title}")
+            break
+
         for key, variations in skill_keywords.items():
-            if key.lower() in skill_lower and any(variant in job_title_lower for variant in variations):
-                main_skill = skill
-                break
+            if key.lower() in skill_lower:
+                if any(variant.lower() in job_title_lower for variant in variations):
+                    main_skill = skill
+                    print(f"Keyword match found: {main_skill} for job title: {job_title} using {variations}")
+                    break
         if main_skill:
             break
 
-    # Default to 'General Skill' if no match is found
     if not main_skill:
         main_skill = 'General Skill'
+        print(f"No match found, defaulting to: {main_skill}")
 
-    print(f"Job Title: '{job_title}', Matched Skill: '{main_skill}'")  # Debugging output to trace matching
     return main_skill

@@ -39,8 +39,8 @@ def create_branch(request):
             password=data['password'],
             user_type= 2 
         )
-        print(f"Branch created: {branch.name}, ID: {branch.id}")
-        return JsonResponse({'message': 'Branch created successfully', 'branch_id': branch.id}, status=201)
+        print(f"Branch created: {branch.name}, ID: {branch.branch_id}")
+        return JsonResponse({'message': 'Branch created successfully', 'branch_id': branch.branch_id}, status=201)
     except Exception as e:
         print(f"Error creating branch: {str(e)}")
         return JsonResponse({'error': str(e)}, status=400)
@@ -95,7 +95,6 @@ def get_all_branches(request):
                 'branch_id': branch.branch_id,
                 'name': branch.name,
                 'company_name': branch.company.company_name,
-                'address': branch.address,
                 'city': branch.city,
                 'user_name': branch.user_name,
                 'image': branch.image

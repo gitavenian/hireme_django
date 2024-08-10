@@ -8,7 +8,7 @@ import math
 from .models import Skill, PreviousJob
 from users.models import User
 from job.models import JobNature
-from hireme.skills import find_matching_skill
+
 
 def calculate_experience(start_date, end_date=None):
     start_year = start_date.year
@@ -46,7 +46,7 @@ def add_previous_job(request):
         end_date = datetime.datetime.strptime(data['end_date'], '%d-%m-%Y').date() if 'end_date' in data else None
 
         experience = calculate_experience(start_date, end_date)
-        job_name = find_matching_skill(data['job'])
+        job_name = data['job']
 
         print(f"Calculated experience: {experience}")
 
@@ -65,7 +65,7 @@ def add_previous_job(request):
         )
 
         print(f"Created previous job: {previous_job}")
-        skill_name = find_matching_skill(data['job'])
+        skill_name = data['job']
         # Check if the skill already exists
         skill, created = Skill.objects.get_or_create(
             user=user,
@@ -133,17 +133,16 @@ def add_skill(request):
         user = get_object_or_404(User, pk=data['user_id'])
         job_nature = get_object_or_404(JobNature, pk=data['jobNature_id'])
 
-        started_at = datetime.datetime.strptime(data['started_at'], '%d-%m-%Y').date()
+        started_at = datetime.datetime.strptime(data['started_at'], '%Y-%m-%d').date()
         experience = calculate_experience(started_at)
-        skill_name = find_matching_skill(data['skill'])
 
         # Create and save the skill
         skill, created = Skill.objects.get_or_create(
             user=user,
             jobNature=job_nature,
-            skill = data['skill'],
-            skill_name=skill_name,
-            defaults={'started_at': started_at, 'experience': experience, 'description': data.get('description', '')}
+            skill_name=data['skill_name'],
+            skill  = data['skill_name'],
+            defaults={'started_at': started_at,'experience': experience, 'description': data.get('description', '')}
         )
 
         # If the skill already exists, just update the started_at and experience
@@ -183,10 +182,35 @@ def get_skills_by_user_id(request, user_id):
                 'user_id': skill.user.user_id,
                 'jobNature_id': skill.jobNature.jobNature_id,
                 'jobNature_name': skill.jobNature.name,
-                'skill': skill.skill,
+                'skill': skill.skill_name,
                 'description': skill.description,
                 'experience': skill_experience,
                 'started_at': skill.started_at,
+            })
+        return JsonResponse({'skills': skills_data}, status=200, safe=False)
+    except Exception as e:
+        return JsonResponse({'error': str(e)}, status=400)
+    
+@require_GET
+def get_user_skills(request, user_id):
+    try:
+        previous_jobs = PreviousJob.objects.filter(user_id=user_id)
+    
+    # Create a dictionary to count jobs for each skill
+        skill_job_counts = {}
+        for job in previous_jobs:
+            skill_name = job.job_name
+            if skill_name in skill_job_counts:
+                skill_job_counts[skill_name] += 1
+            else:
+                skill_job_counts[skill_name] = 1
+            skills = Skill.objects.select_related('jobNature').filter(user_id=user_id)
+        
+        skills_data = []
+        for skill in skills:
+            skill_name = skill.skill_name
+            skills_data.append({
+                skill_name
             })
         return JsonResponse({'skills': skills_data}, status=200, safe=False)
     except Exception as e:

@@ -14,7 +14,7 @@ from users.models import User
 from datetime import datetime, timedelta
 from skills.models import Skill
 from .models import AppliedJob, JobAnnouncement, Interview
-from hireme.skills import find_matching_skill
+
 import logging
 
 
@@ -83,16 +83,13 @@ logging.basicConfig(level=logging.INFO)
 @require_http_methods(["POST"])
 def create_or_update_job_announcement(request):
     try:
-        # Parse JSON data from the request body
         data = json.loads(request.body)
 
         required_fields = [
-            'job_title', 'job_description', 'branch_id', 
-            'jobNature_id', 'gender', 'educationLevel', 
-            'type_of_employment', 'experience', 'salary'
+            'job_title', 'job_description', 'branch_id', 'jobNature_id', 'gender', 
+            'educationLevel', 'type_of_employment', 'experience', 'salary'
         ]
 
-        # Check if all required fields are present in the request data
         if not all(field in data for field in required_fields):
             return JsonResponse({'error': 'Missing required fields'}, status=400)
 
@@ -100,40 +97,34 @@ def create_or_update_job_announcement(request):
         jobNature = JobNature.objects.get(pk=data['jobNature_id'])
 
         job_announcement_id = data.get('job_announcement_id')
-        main_skill =find_matching_skill(data['job_title'])
-        print(main_skill)
+
         if job_announcement_id:
-            # Update existing job announcement
-            try:
-                job_announcement = JobAnnouncement.objects.get(pk=job_announcement_id)
-                job_announcement.job_title = data['job_title']
-                job_announcement.job_description = data['job_description']
-                job_announcement.branch = branch
-                job_announcement.jobNature = jobNature
-                job_announcement.preferredToKnow = data['preferredToKnow'],
-                job_announcement.job_description=data['job_description'],
-                job_announcement.main_skill=find_matching_skill(data['job_title']),
-                job_announcement.soft_skill=find_matching_skill(data['preferredToKnow']),
-                job_announcement.gender = data['gender']
-                job_announcement.educationLevel = data['educationLevel']
-                job_announcement.salary = float(data['salary'])
-                job_announcement.type_of_employment = data['type_of_employment']
-                job_announcement.experience = int(data['experience'])
-                job_announcement.isAvailable = bool(data.get('isAvailable', True))
-                job_announcement.save()
-                return JsonResponse({'message': 'Job announcement updated successfully'}, status=200)
-            except JobAnnouncement.DoesNotExist:
-                return JsonResponse({'error': 'Job announcement not found.'}, status=404)
+            job_announcement = JobAnnouncement.objects.get(pk=job_announcement_id)
+            job_announcement.job_title = data['job_title']
+            job_announcement.job_description = data['job_description']
+            job_announcement.branch = branch
+            job_announcement.jobNature = jobNature
+            job_announcement.main_skill = data['job_title']  # Set main skill as job title
+            job_announcement.soft_skill = data.get('preferredToKnow')
+            job_announcement.preferredToKnow = data.get('preferredToKnow')
+            job_announcement.gender = data['gender']
+            job_announcement.educationLevel = data['educationLevel']
+            job_announcement.salary = float(data['salary'])
+            job_announcement.type_of_employment = data['type_of_employment']
+            job_announcement.experience = int(data['experience'])
+            job_announcement.isAvailable = bool(data.get('isAvailable', True))
+            job_announcement.save()
+
+            return JsonResponse({'message': 'Job announcement updated successfully'}, status=200)
         else:
-            # Create new job announcement
             job_announcement = JobAnnouncement.objects.create(
                 job_title=data['job_title'],
-                preferredToKnow = data['preferredToKnow'],
                 job_description=data['job_description'],
                 branch=branch,
                 jobNature=jobNature,
-                main_skill=find_matching_skill(data['job_title']),
-                soft_skill=find_matching_skill(data['preferredToKnow']),
+                main_skill=data['job_title'],  # Set main skill as job title
+                soft_skill=data.get('preferredToKnow'),
+                preferredToKnow=data.get('preferredToKnow'),
                 gender=data['gender'],
                 educationLevel=data['educationLevel'],
                 salary=float(data['salary']),
@@ -148,33 +139,38 @@ def create_or_update_job_announcement(request):
         return JsonResponse({'error': 'Job nature not found.'}, status=404)
     except Exception as e:
         return JsonResponse({'error': str(e)}, status=400)
-    
+
 @require_GET
 def get_all_job_announcements(request):
+    logger.debug("Starting to fetch all job announcements.")
     try:
-        # Filter to include only available job announcements
-        job_announcements = JobAnnouncement.objects.select_related('branch__company').filter(isAvailable=True)
+        job_announcements = JobAnnouncement.objects.select_related('branch', 'branch__company').filter(isAvailable=True)
         results = []
         for job in job_announcements:
-            results.append({
+            logger.debug(f"Processing job announcement: {job.jobAnnouncement_id}")
+            result = {
                 'jobAnnouncement_id': job.jobAnnouncement_id,
-                'job_title':job.job_title,
-                'preferredToKnow':job.preferredToKnow,
+                'job_title': job.job_title,
                 'job_description': job.job_description,
                 'branch_name': job.branch.name,
                 'branch_city': job.branch.city,
                 'company_name': job.branch.company.company_name,
-                'jobNature': job.jobNature.name,
                 'isAvailable': job.isAvailable,
-                'createdAt': job.createdAt,
-                'gender': job.gender,
+                'createdAt': job.createdAt.strftime('%Y-%m-%d'),
+                'preferredToKnow':job.preferredToKnow,
+                'experience': job.experience,
                 'educationLevel': job.educationLevel,
                 'salary': job.salary,
                 'type_of_employment': job.type_of_employment,
-                'experience': job.experience,
-            })
+                'gender': job.gender,
+            }
+            results.append(result)
+            logger.debug(f"Added job announcement to results: {job.jobAnnouncement_id}")
+        
+        logger.debug("Successfully fetched and processed all job announcements.")
         return JsonResponse({'results': results}, safe=False)
     except Exception as e:
+        logger.error(f"Error fetching job announcements: {e}", exc_info=True)
         return JsonResponse({'error': str(e)}, status=500)
     
 @require_GET
