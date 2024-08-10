@@ -242,13 +242,12 @@ def get_suitable_job_announcements(request, user_id):
 
     for job in job_announcements:
         job_skill_experience = normalized_skill_experience.get(job.main_skill, 0)
-        suitability_score = job_skill_experience / job.experience if job.experience > 0 else float('inf') if job_skill_experience > 0 else 0
-        
-        # Add a city match bonus
-        city_match_bonus = 1 if job.branch.city == user.city else 0
-
-        # Combine suitability score with city match bonus
-        final_score = suitability_score + city_match_bonus
+        city_match = 1 if job.branch.city == user.city else 0
+        if job.experience > 0:
+            suitability_score = job_skill_experience / job.experience + city_match
+        else:
+            # Avoid division by zero by treating zero experience as the highest suitability if the user has any relevant experience
+            suitability_score = float('inf') if job_skill_experience > 0 else 0
 
         suitable_jobs.append({
             'jobAnnouncement_id': job.jobAnnouncement_id,
@@ -256,12 +255,23 @@ def get_suitable_job_announcements(request, user_id):
             'branch': job.branch.name,
             'experience': job.experience,
             'city': job.branch.city,
+            'job_nature':job.jobNature.name,
+            'branch': job.branch.name,
+            'branch_image': job.branch.image,
+            'experience': job.experience,
+            'type':job.type_of_employment,
+            'city_match': city_match,
             'user_experience': job_skill_experience,
-            'city_match': city_match_bonus,
-            'suitability_score': final_score
+            'suitability_score': suitability_score,
         })
 
-    # Sort jobs by final score in descending order, high suitability first
-    suitable_jobs.sort(key=lambda x: (-x['suitability_score'], x['experience']))
+    # Sort jobs by suitability score in descending order, high suitability first
+    suitable_jobs.sort(key=lambda x: (-x['suitability_score'], x['required_experience']))
 
-    return JsonResponse({'jobs': suitable_jobs})
+    # Return response including the total number of suitable jobs
+    response_data = {
+        'length': len(suitable_jobs),
+        'jobs': suitable_jobs
+    }
+
+    return JsonResponse(response_data)
