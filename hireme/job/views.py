@@ -86,15 +86,21 @@ def create_or_update_job_announcement(request):
         data = json.loads(request.body)
 
         required_fields = [
-            'job_title', 'job_description', 'branch_id', 'jobNature_id', 'gender', 
+            'job_title', 'job_description', 'branch_id', 'jobNature', 'gender',
             'educationLevel', 'type_of_employment', 'experience', 'salary'
         ]
 
         if not all(field in data for field in required_fields):
             return JsonResponse({'error': 'Missing required fields'}, status=400)
 
-        branch = Branch.objects.get(pk=data['branch_id'])
-        jobNature = JobNature.objects.get(pk=data['jobNature_id'])
+        # Get branch object
+        branch = get_object_or_404(Branch, pk=data['branch_id'])
+
+        # Get job nature object by name
+        job_nature_name = data['jobNature']
+        jobNature = JobNature.objects.filter(name=job_nature_name).first()
+        if not jobNature:
+            return JsonResponse({'error': 'Job nature not found.'}, status=404)
 
         job_announcement_id = data.get('job_announcement_id')
 
@@ -465,47 +471,6 @@ def add_job_nature(request):
     except Exception as e:
         return JsonResponse({'error': str(e)}, status=400)
     
-@require_GET
-def list_users_with_matching_job_nature(request, branch_id):
-    branch = get_object_or_404(Branch, pk=branch_id)
-    job_announcements = JobAnnouncement.objects.filter(branch=branch)
-    skills = Skill.objects.filter(user=user)
-    best_skill = max(skills, key=lambda skill: skill.experience, default=None)
-    best_skill_name = best_skill.skill if best_skill else None
-    
-    # Extract job natures from the branch's job opportunities
-    job_natures = set(job_announcement.jobNature.jobNature_id for job_announcement in job_announcements)
-    
-    matching_users = []
-
-    users = User.objects.all()
-    for user in users:
-        user_job_natures = set(skill.jobNature.jobNature_id for skill in user.skill_set.all())
-        if job_natures.intersection(user_job_natures):
-            matching_users.append(user)
-
-    # Serialize user data
-    user_data = [
-        {
-            'user_id': user.user_id,
-            'firstName': user.firstName,
-            'lastName': user.lastName,
-            'email': user.email,
-            'image': user.photo,
-            'city': user.city,
-            'address':user.address,
-            'best_skill': best_skill_name,
-            'gender': user.gender
-        }
-        for user in matching_users
-    ]
-
-    response_data = {
-        'length': len(user_data),
-        'users': user_data
-    }
-
-    return JsonResponse(response_data)
 
 @csrf_exempt
 @require_POST

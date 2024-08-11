@@ -45,7 +45,42 @@ def create_branch(request):
         print(f"Error creating branch: {str(e)}")
         return JsonResponse({'error': str(e)}, status=400)
 
+@csrf_exempt
+@require_POST
+def update_branch(request, branch_id):
+    try:
+        data = json.loads(request.body)
+        print(f"Updating branch with ID {branch_id} using data: {data}")
 
+        # Attempt to retrieve the existing branch using the provided ID
+        branch = Branch.objects.get(pk=branch_id)
+        company_data = data.get('company')
+        
+        if not company_data or 'company_name' not in company_data:
+            return JsonResponse({'error': 'Company data with company_name is required.'}, status=400)
+
+        company_name = company_data['company_name']
+        company, created = Company.objects.get_or_create(company_name=company_name)
+        print(f"Company {'created' if created else 'found'} for branch update: {company.company_name}")
+
+        # Update the branch details from the provided data
+        branch.name = data.get('branch_name', branch.name)
+        branch.company = company
+        branch.phone_number = data.get('phone_number', branch.phone_number)
+        branch.city = data.get('city', branch.city)
+        branch.emails = data.get('emails', branch.emails)
+        branch.user_name = data.get('user_name', branch.user_name)
+        branch.password = data.get('password', branch.password)
+        branch.user_type = data.get('user_type', branch.user_type)
+        branch.save()
+        print(f"Branch updated: {branch.name}, ID: {branch.branch_id}")
+        return JsonResponse({'message': 'Branch updated successfully', 'branch_id': branch.branch_id}, status=200)
+    except Branch.DoesNotExist:
+        print(f"Branch with ID {branch_id} not found.")
+        return JsonResponse({'error': 'Branch not found.'}, status=404)
+    except Exception as e:
+        print(f"Error updating branch: {str(e)}")
+        return JsonResponse({'error': str(e)}, status=400)
 
 @require_GET
 def get_branch_info(request, branch_id):
@@ -163,43 +198,53 @@ def get_announcements_by_branch(request, branch_id):
     
 @csrf_exempt
 @require_POST
-def filter_users(request, branch_id):
+def filter_users_by_job_nature(request, branch_id):
     try:
         print(f"Filtering users for branch ID: {branch_id}")
         data = json.loads(request.body)
         city = data.get('city')
         gender = data.get('gender')
-        skill_name = data.get('skill')
+        job_nature_name = data.get('job_nature')
+
         branch = get_object_or_404(Branch, pk=branch_id)
-        job_natures = JobNature.objects.filter(jobannouncement__branch=branch).distinct()
+        job_natures = JobNature.objects.filter(name__icontains=job_nature_name, jobannouncement__branch=branch).distinct()
+
         users = User.objects.all()
-        
         if city:
             users = users.filter(city__iexact=city)
         if gender and gender.lower() != "any":
             users = users.filter(gender__iexact=gender)
-        if skill_name:
-            users = users.filter(skill__skill_name__icontains=skill_name, skill__jobNature__in=job_natures).distinct()
-        
-        user_data = [{
-            'user_id': user.user_id,
-            'firstName': user.firstName,
-            'lastName': user.lastName,
-            'email': user.email,
-            'image': user.photo,
-            'city': user.city,
-            'address': user.address,
-            'best_skill': best_skill.skill if (best_skill := max(Skill.objects.filter(user=user), key=lambda skill: skill.experience, default=None)) else None,
-            'gender': user.gender
-        } for user in users]
+
+        user_data = []
+        for user in users:
+            user_skills = Skill.objects.filter(user=user)
+            best_skill = max(user_skills, key=lambda skill: skill.experience, default=None)
+            skill_match_score = 1 if any(skill.jobNature in job_natures for skill in user_skills) else 0
+
+            user_info = {
+                'user_id': user.user_id,
+                'firstName': user.firstName,
+                'lastName': user.lastName,
+                'email': user.email,
+                'image': user.photo if user.photo else None,
+                'city': user.city,
+                'address': user.address,
+                'best_skill': best_skill.skill_name if best_skill else None,
+                'gender': user.gender,
+                'match_score': skill_match_score  # This field is used to prioritize users
+            }
+            user_data.append(user_info)
+
+        # Sort users primarily by match score, secondary by first name or any other criteria
+        user_data.sort(key=lambda x: (-x['match_score'], x['firstName']))
+
         print(f"Total users matching criteria: {len(user_data)}")
-        return JsonResponse({'length': len(user_data), 'users': user_data})
+        return JsonResponse({'length': len(user_data), 'users': user_data}, status=200)
     except Exception as e:
         print(f"Error filtering users: {str(e)}")
         return JsonResponse({'error': str(e)}, status=400)
-
 @require_GET
-def get_skills_by_branch_job_nature(request, branch_id):
+def get_branch_job_nature(request, branch_id):
     try:
         # Get the branch and related job announcements
         branch = get_object_or_404(Branch, pk=branch_id)
@@ -208,15 +253,8 @@ def get_skills_by_branch_job_nature(request, branch_id):
         # Extract job natures from the branch's job opportunities
         job_natures = set(job_announcement.jobNature.name for job_announcement in job_announcements)
 
-        # Filter skills based on job natures present in the branch's job announcements
-        matching_skills = []
-        for nature in job_natures:
-            if nature in skills:
-                matching_skills.extend(skills[nature])
-
         response_data = {
             'job_natures': list(job_natures),
-            'skills': matching_skills
         }
 
         return JsonResponse(response_data, status=200)

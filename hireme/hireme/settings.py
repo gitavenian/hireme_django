@@ -42,6 +42,7 @@ ALLOWED_HOSTS = [   '192.168.1.22',
                     '192.168.1.5',
                     'c7f1-149-34-244-130.ngrok-free.app']
 
+APPEND_SLASH = False
 
 
 # Application definition

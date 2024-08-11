@@ -316,42 +316,36 @@ def login_view(request):
 @require_GET
 def get_user_info(request, user_id):
     try:
-        user = User.objects.get(pk=user_id)
+        user = get_object_or_404(User, pk=user_id)
         age = calculate_age(user.birthDate)
 
-        best_skill = max(skills, key=lambda skill: skill.experience, default=None)
-        best_skill_name = best_skill.skill if best_skill else None
-
-        # Fetch the user's previous jobs
-        previous_jobs = PreviousJob.objects.filter(user=user)
-        previous_jobs_data = []
-        for job in previous_jobs:
-            previous_jobs_data.append({
-                'previousJob_id': job.previousJob_id,
-                'jobNature_id': job.jobNature.jobNature_id,
-                'jobNature_name': job.jobNature.name,
-                'job_name': job.job,
-                'start_date': job.start_date,
-                'end_date': job.end_date,
-                'experience': job.experience,
-                'portfolio': job.portfolio,
-                'description': job.description,
-                'recommendation': job.recommendation,
-            })
-
-        # Fetch the user's skills
         skills = Skill.objects.filter(user=user)
-        skills_data = []
-        for skill in skills:
-            skills_data.append({
-                'skill_id': skill.skill_id,
-                'jobNature_id': skill.jobNature.jobNature_id,
-                'jobNature_name': skill.jobNature.name,
-                'skill_name': skill.skill,
-                'description': skill.description,
-                'experience': skill.experience,
-                'started_at': skill.started_at,
-            })
+        best_skill = max(skills, key=lambda skill: skill.experience, default=None)
+        best_skill_name = best_skill.skill_name
+        best_skill_data = {
+            'skill_id': best_skill.skill_id,
+            'jobNature_id': best_skill.jobNature.jobNature_id,
+            'jobNature_name': best_skill.jobNature.name,
+            'skill_name': best_skill.skill_name,
+            'description': best_skill.description,
+            'experience': best_skill.experience,
+            'started_at': best_skill.started_at,
+        } if best_skill else None
+
+        previous_jobs = PreviousJob.objects.filter(user=user)
+        best_job = max(previous_jobs, key=lambda job: job.experience, default=None)
+        best_job_data = {
+            'previousJob_id': best_job.previousJob_id,
+            'jobNature_id': best_job.jobNature.jobNature_id,
+            'jobNature_name': best_job.jobNature.name,
+            'job_name': best_job.job_name,
+            'start_date': best_job.start_date,
+            'end_date': best_job.end_date,
+            'experience': best_job.experience,
+            'portfolio': best_job.portfolio,
+            'description': best_job.description,
+            'recommendation': best_job.recommendation,
+        } if best_job else None
 
         user_info = {
             'user_id': user.user_id,
@@ -359,7 +353,7 @@ def get_user_info(request, user_id):
             'lastName': user.lastName,
             'best_skill': best_skill_name,
             'email': user.email,
-            'age':age,
+            'age': age,
             'address': user.address,
             'phone_number': user.phone_number,
             'gender': user.gender,
@@ -373,8 +367,8 @@ def get_user_info(request, user_id):
             'behance_link': user.behance_link,
             'github_link': user.github_link,
             'user_type': user.user_type,
-            'previous_jobs': previous_jobs_data,
-            'skills': skills_data,
+            'experience': best_job_data,
+            'skill': best_skill_data
         }
 
         return JsonResponse(user_info)
@@ -385,34 +379,6 @@ def get_user_info(request, user_id):
     
 
 
-@require_GET
-def get_all_users(request):
-    try:
-        users = User.objects.all()
-        user_data = []
-        for user in users:
-            user_data.append({
-                'user_id': user.user_id,
-                'firstName': user.firstName,
-                'lastName': user.lastName,
-                'email': user.email,
-                'address': user.address,
-                'phone_number': user.phone_number,
-                'gender': user.gender,
-                'photo': user.photo,
-                'city': user.city,
-                'educationLevel': user.educationLevel,
-                'birthDate': user.birthDate,
-                'language': user.language,
-                'username': user.username,
-                'facebook_link': user.facebook_link,
-                'behance_link': user.behance_link,
-                'github_link': user.github_link,
-                'user_type': user.user_type,
-            })
-        return JsonResponse({'users': user_data}, status=200)
-    except Exception as e:
-        return JsonResponse({'error': str(e)}, status=400)
 
 @require_GET
 def get_all_users(request):
